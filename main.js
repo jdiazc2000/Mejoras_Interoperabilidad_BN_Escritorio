@@ -51,5 +51,5 @@ $(document).ready(function(){
 
 
 $(".btn2").click(function(){
-       document.location.href="/Pages/AfiliacionCeluiar_1/"
+       document.location.href="/Pages/AfiliacionDeCelular/AfiliacionCelular_1/"
 })
