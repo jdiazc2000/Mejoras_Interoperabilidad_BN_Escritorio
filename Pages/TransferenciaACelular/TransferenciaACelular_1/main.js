@@ -25,10 +25,10 @@ $("#Celular").on("input", function() {
 $('input[type="radio"]').change(function() {
     if($('input[name="ritem"]:checked').val() !== null){
         var valorSeleccionado = $('input[name="ritem"]:checked').val();
-        //console.log("Valor seleccionado: " + valorSeleccionado);
+        console.log("Valor seleccionado: " + valorSeleccionado);
         IsRadioSelected = true
     }else{
-        //console.log("no")
+        console.log("no")
         IsRadioSelected = false
     }
 
@@ -59,10 +59,10 @@ function Off(){
 }
 
 $(".btn1").click(function(){
-    document.location.href="../../../index.html"
+    document.location.href="../../TransferenciaACelular/TransferenciaACelular_0"
 })
 
 $(".btn2").click(function(){
-    document.location.href="../../TransferenciaACelular/TransferenciaACelular_1"
+    //document.location.href="../../TransferenciaACelular/TransferenciaACelular_0"
 })
 
