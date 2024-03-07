@@ -119,11 +119,11 @@ header p {
   margin-bottom: 24px;
 }
 
-.BnContainer{
+.BnContainer {
   border-style: none none dotted none;
 }
 
-.BnContainer label{
+.BnContainer label {
   display: inline-flex;
   justify-content: space-around;
 }
@@ -168,7 +168,7 @@ header p {
   position: absolute;
   height: 20px;
   width: 20px;
-  background-color: rgba(191,191,191,255);
+  background-color: rgba(191, 191, 191, 255);
   border-radius: 20px;
 }
 
@@ -180,7 +180,7 @@ header p {
   top: 4px;
   width: 3px;
   height: 7px;
-  border: solid rgba(79,79,79,255);; /* Cambiado a color negro por defecto */
+  border: solid rgba(79, 79, 79, 255); /* Cambiado a color negro por defecto */
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -189,7 +189,7 @@ header p {
 
 /* Show the checkmark when checked and adjust background color */
 .container input:checked ~ .checkmark:after {
-  border: solid rgb(204, 204, 204)
+  border: solid rgb(204, 204, 204);
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -202,16 +202,25 @@ header p {
   border-width: 0 2.5px 2.5px 0;
 }
 
-.BnLabel{
+.BnLabel {
+  height: 20px;
   margin-left: 2rem;
   display: inline-flex;
   justify-content: space-evenly;
   width: 158px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: rgba(39, 60, 78, 1);
+  align-items: center;
+  width: 10.9rem;
 }
 
-.BnLabel img{
-/*
+.BnLabel img {
   width: 40px;
   height: 32px;
-*/
+  margin-right: 12px;
 }

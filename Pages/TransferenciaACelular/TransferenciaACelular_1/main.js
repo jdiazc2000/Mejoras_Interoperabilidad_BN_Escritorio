@@ -1,5 +1,6 @@
 $(document).ready(function(){
     Off();
+    console.log(Entidades[0].nombre)
 });
 
 let IsRadioSelected = false;
@@ -65,4 +66,14 @@ $(".btn1").click(function(){
 $(".btn2").click(function(){
     //document.location.href="../../TransferenciaACelular/TransferenciaACelular_0"
 })
+
+
+let Entidades = [
+    { nombre: "Plin", logourl: "../../../assets/VECTOR-ICON-MV/plinlogo.svg" },
+    { nombre: "Yape", apellido: "../../../assets/VECTOR-ICON-MV/yapelogo.svg" },
+    { nombre: "Caja Arequipa", apellido: "../../../assets/VECTOR-ICON-MV/cajaarequipalogo.svg" },
+    { nombre: "Banco Pichincha", apellido: "../../../assets/VECTOR-ICON-MV/bancopichinchalogo.svg" },
+];
+  
+
 
