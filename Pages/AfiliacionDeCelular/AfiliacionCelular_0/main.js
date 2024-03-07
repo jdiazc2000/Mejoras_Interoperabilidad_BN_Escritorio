@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+/*
     let fetchData
 
     $(".Primero").css({"background-color": "blue"})
@@ -47,9 +47,13 @@ $(document).ready(function(){
             }
         })
         .catch(err => console.log(err))
+*/
 });
 
+$(".btn1").click(function(){
+    document.location.href="/Pages/TransferenciaACelular/TransferenciaACelular_0/"
+})
 
-$("#AfiliarBtn").click(function(){
-       document.location.href="/Pages/AfiliacionDeCelular/AfiliacionCelular_0/"
+$(".btn2").click(function(){
+       document.location.href="/Pages/AfiliacionDeCelular/AfiliacionCelular_1/"
 })
