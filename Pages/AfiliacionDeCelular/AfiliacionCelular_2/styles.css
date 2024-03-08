@@ -17,10 +17,13 @@ body {
   display: grid;
   text-align: center;
   justify-items: center;
+  height: 100vh;
 }
 
 #maindiv {
   width: 440px;
+  display: grid;
+  align-content: center;  
 }
 
 h1 {

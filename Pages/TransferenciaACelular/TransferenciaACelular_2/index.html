@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afiliación Celular</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="maindiv">
+      <h1>RESUMEN DE TRANSFERENCIA</h1>
+
+      <p class="label">
+        ¿Estás seguro que deseas realizar la transferencia al celular?
+      </p>
+
+      <div class="container">
+        <div class="CelularContainer">
+          <div class="h2div">
+            <h2>Rosa García Zevallos</h2>
+          </div>
+          <div class="pdiv">
+            <p class="CelNum">980287644</p>
+          </div>
+          <div class="pdiv">
+            <p id="entidaddestino">Entidad destino:  </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="Cuentacontainer">
+        <div class="Cuentacontainer_Info">
+          <p class="number">S/ 320.00</p>
+          <p>Cuenta origen: <strong>01-1001-000000</strong></p>
+        </div>
+      </div>
+
+      <div class="ComiMontocontainer">
+        <div class="ComiMontocontainer_Info">
+          <p>Comisión: <strong>Gratis</strong></p>
+          <p>Monto a cargar: <strong>S/ 320.00</strong></p>
+        </div>
+      </div>
+
+      <div>
+        <form id="CodeValidation" name="CodeValidation">
+          <label for="code">Clave dinámica digital </label>
+          <div class="codeContainer">
+            <input
+              type="password"
+              name="code"
+              id="code"
+              required
+              maxlength="6"
+            />
+            <img src="../../../assets/VECTOR-ICON-MV/Exclamation.svg" alt="" />
+            <p>¿Nunca llegó la clave?</p>
+          </div>
+          <div class="Reenviar">
+            <a href="">Reenviar código</a>
+          </div>
+        </form>
+      </div>
+
+      <div id="btndiv">
+        <button class="btn1">
+          <img src="../../../assets/VECTOR-ICON-MV/Vector-2.svg" />REGRESAR
+        </button>
+        <button class="btn2" disabled>
+          CONTINUAR<img src="../../../assets/VECTOR-ICON-MV/Vector-1.svg" />
+        </button>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

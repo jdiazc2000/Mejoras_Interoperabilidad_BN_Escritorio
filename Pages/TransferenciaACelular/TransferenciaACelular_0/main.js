@@ -63,6 +63,7 @@ $(".btn1").click(function(){
 })
 
 $(".btn2").click(function(){
-    document.location.href="../../TransferenciaACelular/TransferenciaACelular_1"
+    let radiobuttonselectedvalue = $('input[name="ritem"]:checked').val()
+    document.location.href="../../TransferenciaACelular/TransferenciaACelular_1/index.html?variable="  + encodeURIComponent(radiobuttonselectedvalue);
 })
 
