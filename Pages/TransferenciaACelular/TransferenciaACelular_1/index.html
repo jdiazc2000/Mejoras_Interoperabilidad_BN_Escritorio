@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afiliación Celular</title>
     <link rel="stylesheet" href="styles.css" />
+    <link type="text/css" rel="stylesheet" href="http://www.dreamtemplate.com/dreamcodes/carousel_hor/css/tsc_carousel_hor.css" />
   </head>
   <body>
     <div id="maindiv">
@@ -14,28 +15,66 @@
       <p>980287644</p>
     </header>
 
-      <div class="container">
-        <p class="label">1. Entidad a transferir</p>
-          <div>
-            <div class="checkbox">
-              <label class="container checkboxlabel"
-                ><input type="checkbox" class="black" id="checkbox"/>
-                <span class="checkmark"></span>
-                <label class="BnLabel"><img src="../../../assets/VECTOR-ICON-MV/bnlogo.svg" alt=""> Banco de la Nación</label>
-              </label>
-             
-            </div>
-          </div>
-          <div>
-            <img src="../../../assets/Svgs/Line.svg" alt="">
-          </div>
-
-
-      <div class="operationcontainer">
-        <p class="label">2. Monto a transferir</p>
+    <div class="container">
+      <p class="label">1. Entidad a transferir</p>
+      <div>
+        <div class="checkbox">
+          <label class="container checkboxlabel">
+            <input type="checkbox" class="black" name="ritem" id="BN" value="BN" data-target="BN">
+            <span class="checkmark"></span>
+            <label class="BnLabel"><img src="../../../assets/VECTOR-ICON-MV/bnlogo.svg" alt=""> Banco de la Nación</label>
+          </label>
+        </div>
       </div>
+    </div>
+    
+    <div style="margin-bottom: 20.26px;">
+      <img src="../../../assets/Svgs/Line.svg" alt="">
+    </div>
+    
+    <div id="EntidadesCarousel">
+      <div class="EntidadSquare">
+        <img src="../../../assets/VECTOR-ICON-MV/plinlogo.svg" alt="">
+        <label class="container checkboxlabel">
+          <input type="checkbox" class="black" name="ritem" value="Plin" data-target="Plin">
+          <span class="checkmark"></span>
+        </label>
+        <p id="Plin">PLIN</p>
+      </div>
+      <div class="EntidadSquare">
+        <img src="../../../assets/VECTOR-ICON-MV/yapelogo.svg" alt="">
+        <label class="container checkboxlabel">
+          <input type="checkbox" class="black" name="ritem" value="Yape" data-target="Yape">
+          <span class="checkmark"></span>
+        </label>
+        <p id="Yape">YAPE</p>
+      </div>
+      <div class="EntidadSquare">
+        <img src="../../../assets/VECTOR-ICON-MV/cajaarequipalogo.svg" alt="">
+        <label class="container checkboxlabel">
+          <input type="checkbox" class="black" name="ritem" value="Caja Arequipa" data-target="CajaArequipa">
+          <span class="checkmark"></span>
+        </label>
+        <p id="CajaArequipa">CAJA AREQUIPA</p>
+      </div>
+      <div class="EntidadSquare">
+        <img src="../../../assets/VECTOR-ICON-MV/bancopichinchalogo.svg" alt="">
+        <label class="container checkboxlabel">
+          <input type="checkbox" class="black" name="ritem" value="Banco Pichincha" data-target="BancoPichincha">
+          <span class="checkmark"></span>
+        </label>
+        <p id="BancoPichincha">BANCO PICHINCHA</p>
+      </div>
+    </div>
 
-
+      <div class="MontoContainer">
+        <p class="label">2. Monto a transferir</p>
+        <div class="MontoSolesContainer">
+          <p>S/</p>
+          <input type="number" placeholder="0.00" id="monto">
+        </div>
+        <h1>(Monto a transferir entre S/0.20 y S/ 500.00)</h1>
+      </div>
 
       <div id="btndiv">
         <button class="btn1">

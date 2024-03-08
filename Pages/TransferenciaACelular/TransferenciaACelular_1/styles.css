@@ -119,10 +119,6 @@ header p {
   margin-bottom: 24px;
 }
 
-.BnContainer {
-  border-style: none none dotted none;
-}
-
 .BnContainer label {
   display: inline-flex;
   justify-content: space-around;
@@ -141,7 +137,6 @@ header p {
   text-align: justified;
 }
 
-/* Customize the label (the container) */
 .BnContainer .container {
   display: block;
   position: relative;
@@ -154,7 +149,6 @@ header p {
   user-select: none;
 }
 
-/* Hide the browser's default checkbox */
 .container input {
   position: absolute;
   opacity: 0;
@@ -163,7 +157,11 @@ header p {
   width: 0;
 }
 
-/* Create a custom checkbox */
+::-webkit-input-placeholder { color: rgba(79, 79, 79, 1); }
+::-moz-placeholder { color: rgba(79, 79, 79, 1); }
+:-ms-input-placeholder { color: rgba(79, 79, 79, 1);; }
+.DestiBene input:-moz-placeholder {  color: rgba(79, 79, 79, 1); }
+
 .checkmark {
   position: absolute;
   height: 20px;
@@ -172,27 +170,23 @@ header p {
   border-radius: 20px;
 }
 
-/* Create the checkmark/indicator */
 .checkmark:after {
   content: "";
   position: absolute;
-  left: 0.45rem;
+  left: 8px;
   top: 4px;
-  width: 3px;
+  width: 2px;
   height: 7px;
-  border: solid rgba(79, 79, 79, 255); /* Cambiado a color negro por defecto */
+  border: solid rgba(79, 79, 79, 255);
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
-/* Show the checkmark when checked and adjust background color */
 .container input:checked ~ .checkmark:after {
   border: solid rgb(204, 204, 204);
 }
 
-/* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: rgba(197, 20, 22, 1);
 }
@@ -223,4 +217,96 @@ header p {
   width: 40px;
   height: 32px;
   margin-right: 12px;
+}
+
+#EntidadesCarousel {
+  display: flex;
+  justify-content: space-around;
+}
+
+.EntidadSquare {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+.EntidadSquare img {
+  width: 92.33px;
+  height: 51.33px;
+  margin-bottom: 16.33px;
+}
+
+.EntidadSquare .container input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  position: sticky;
+}
+
+.EntidadSquare .checkmark {
+  margin-left: -10px;
+}
+
+.EntidadSquare p {
+  visibility: hidden;
+  margin-bottom: 16px;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: rgba(39, 60, 78, 1);
+}
+
+.EntidadSquare label {
+  margin-bottom: 20.33px;
+}
+
+.MontoSolesContainer {
+  border: solid 1px;
+  border-radius: 8px;
+  border-color: rgba(215, 215, 215, 1);
+  display: flex;
+  padding: 12px 36px 12px 36px;
+  justify-content: space-between;
+}
+
+.MontoSolesContainer p {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: rgba(79, 79, 79, 1);
+}
+
+.MontoSolesContainer input {
+  text-align: right;
+  border: none;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: right;
+  color: rgba(79, 79, 79, 1);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.MontoContainer h1{
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(79, 79, 79, 1);
 }
