@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
 $(".btn1").click(function(){
-       document.location.href="../../../index.html"
+    document.location.href="../AfiliacionCelular_0/AfiliacionCelular_0.html"
 })
 
 $(".btn2").click(function(){

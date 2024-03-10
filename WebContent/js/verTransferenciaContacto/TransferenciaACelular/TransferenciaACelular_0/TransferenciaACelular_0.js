@@ -59,17 +59,17 @@ function Off(){
 }
 
 $(".btn1").click(function(){
-    document.location.href="../../../index.html"
+    history.back()
 })
 
 $(".btn2").click(function(){
     let radiobuttonselectedvalue = $('input[name="ritem"]:checked').val()
     
     //NOTA ELIMINAR SIGUIENTE CONDICIONAL EN PROD - SOLO HECHO PARA PRUEBAS DE NÚMERO SOLO AFILIADO AL BANCO
-    
     if($("#Celular").val() === '000000000'){
         radiobuttonselectedvalue = "Banco"
     }
+    //NOTA ELIMINAR SIGUIENTE CONDICIONAL EN PROD - SOLO HECHO PARA PRUEBAS DE NÚMERO SOLO AFILIADO AL BANCO
 
     document.location.href="../TransferenciaACelular_1/TransferenciaACelular_1.html?variable="  + encodeURIComponent(radiobuttonselectedvalue);
 })

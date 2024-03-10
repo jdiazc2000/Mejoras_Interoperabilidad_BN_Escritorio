@@ -3,69 +3,143 @@ let IsCodeFull = false;
 let ultimoCheckboxSeleccionado = "";
 let checkboxValueAEnviar = "";
 let variableRecibida = getParameterByName("variable");
+let scrollContainer = $(".gallery");
+let backBtn = $("#backBtn");
+let nextBtn = $("#nextBtn");
+let itemN = 1;
 
 $(document).ready(function () {
   Off();
   console.log("Variable recibida:", variableRecibida);
-
-  if(variableRecibida == "Nuevo"){
-  aparecerBN();  
-  aparecerPLIN();
-  aparecerYAPE();
-  aparecerCAJAAREQUIPA();
-  aparecerBANCOPICHINCHA();
-  }else if(variableRecibida == "Banco"){
+  if (variableRecibida == "Nuevo") {
     aparecerBN();
-  }
-  else{
+    aparecerPLIN();
+    aparecerYAPE();
+    aparecerCAJAAREQUIPA();
+    aparecerBANCOPICHINCHA();
+  } else if (variableRecibida == "Banco") {
+    aparecerBN();
+  } else {
     SOLOPLINSIMULACION();
   }
+
+  let numberOfSpans = $("#EntidadSPAN span").length + $("#EntidadSPAN2 span").length;
+  console.log(numberOfSpans);
+
+  backBtn.on("click", function () {
+    if (itemN === 1) {
+      console.log("ay");
+    } else {
+      scrollContainer.css("scroll-behavior", "smooth");
+      scrollContainer.scrollLeft(scrollContainer.scrollLeft() - 80);
+      itemN--;
+    }
+    console.log(itemN);
+  });
+
+  nextBtn.on("click", function () {
+    if (itemN < numberOfSpans / 2) {
+      scrollContainer.css("scroll-behavior", "smooth");
+      scrollContainer.scrollLeft(scrollContainer.scrollLeft() + 80);
+      itemN++;
+    } else {
+      console.log("No se puede avanzar más, último elemento alcanzado");
+    }
+    console.log(itemN);
+  });
+
+  let checkboxes = $(".checkboxlabel input[type='checkbox']");
+
+  checkboxes.on("change", function () {
+    if ($(this).attr("id") === "BN" && $(this).prop("checked")) {
+      checkboxes.not(this).prop("checked", false);
+    } else {
+      $("#BN").prop("checked", false);
+      checkboxes.not(this).each(function () {
+        $(this)
+          .siblings(".checkbox-image")
+          .attr(
+            "src",
+            "../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckOff.svg"
+          );
+      });
+    }
+
+    checkboxes.each(function () {
+      let checkboxImage = $(this).siblings(".checkbox-image");
+    
+      if ($(this).prop("checked")) {
+        checkboxImage.attr(
+          "src",
+          "../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckOn.svg"
+        );
+      } else {
+        checkboxImage.attr(
+          "src",
+          "../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckOff.svg"
+        );
+      }
+    });
+  });
 });
 
 $(document).on("click", 'input[type="checkbox"]', function () {
   $('input[type="checkbox"]').not(this).prop("checked", false);
 });
 
-$(document).on("change", '.EntidadSquare input[type="checkbox"], #BN', function () {
-  let checkboxValue = $(this).val();
+$(document).on(
+  "change",
+  '.EntidadSquare input[type="checkbox"], #BN',
+  function () {
+    let checkboxValue = $(this).val();
 
-  if ($(this).attr('id') === 'BN') {
-    if ($(this).is(":checked")) {
-      ocultarTodosLosElementosP();
-      IsRadioSelected = true;
-    } else if ($('.EntidadSquare input[type="checkbox"]:checked').not('#BN').length === 0) {
-      IsRadioSelected = false;
-      checkboxValue = "";
-    }
-  } else {
-    var targetId = $(this).data("target");
-    $('.EntidadSquare p').not('#' + targetId).css("visibility", "hidden");
-
-    if ($('.EntidadSquare input[type="checkbox"]:checked').not('#BN').length === 0) {
-      ocultarTodosLosElementosP();
-      IsRadioSelected = false;
-      checkboxValue = "";
+    if ($(this).attr("id") === "BN") {
+      if ($(this).is(":checked")) {
+        ocultarTodosLosElementosP();
+        IsRadioSelected = true;
+      } else if (
+        $('.EntidadSquare input[type="checkbox"]:checked').not("#BN").length ===
+        0
+      ) {
+        IsRadioSelected = false;
+        checkboxValue = "";
+      }
     } else {
-      $("#" + targetId).css("visibility", "visible");
-      IsRadioSelected = true;
-    }
-  }
+      let targetId = $(this).data("target");
+      $(".EntidadSquare p")
+        .not("#" + targetId)
+        .css("visibility", "hidden");
 
-  checkboxValueAEnviar = checkboxValue.toUpperCase();
-  console.log("Checkbox Value:", checkboxValue.toUpperCase());
-  NextButton();
-});
+      if (
+        $('.EntidadSquare input[type="checkbox"]:checked').not("#BN").length ===
+        0
+      ) {
+        ocultarTodosLosElementosP();
+        IsRadioSelected = false;
+        checkboxValue = "";
+      } else {
+        $("#" + targetId).css("visibility", "visible");
+        IsRadioSelected = true;
+      }
+    }
+
+    checkboxValueAEnviar = checkboxValue.toUpperCase();
+    console.log("Checkbox Value:", checkboxValue.toUpperCase());
+    NextButton();
+  }
+);
 
 $("#monto").on("input", function () {
-  let montoValue = $("#monto").val().replace(/\D+/g, '');
+  let montoValue = $("#monto").val().replace(/\D+/g, "");
+  console.log(montoValue)
   const minValue = 20;
   const maxValue = 50000;
 
   if (montoValue.toString().startsWith("00")) {
-    montoValue = '';
+    montoValue = "";
   }
 
-  if (montoValue !== '' && !isNaN(montoValue)) {
+  if (montoValue !== "" && !isNaN(montoValue)) {
     montoValue = parseInt(montoValue, 10);
 
     if (montoValue >= minValue && montoValue <= maxValue) {
@@ -81,41 +155,46 @@ $("#monto").on("input", function () {
 
 $('input[type="checkbox"]').change(function () {
   if ($('input[name="ritem"]:checked').val() !== undefined) {
-    console.log($('input[name="ritem"]:checked').val())
+    console.log($('input[name="ritem"]:checked').val());
     IsRadioSelected = true;
   } else {
     console.log("no");
     IsRadioSelected = false;
   }
-  console.log(IsRadioSelected)
-  NextButton()
+  console.log(IsRadioSelected);
+  NextButton();
 });
 
 $(".btn1").click(function () {
-  document.location.href =
-    "../../TransferenciaACelular/TransferenciaACelular_0";
+  document.location.href="../TransferenciaACelular_0/TransferenciaACelular_0.html";
 });
 
 $(".btn2").click(function () {
-  document.location.href="../TransferenciaACelular_3/TransferenciaACelular_3.html?variable="  + encodeURIComponent(checkboxValueAEnviar);
+  document.location.href =
+    "../TransferenciaACelular_3/TransferenciaACelular_3.html?variable=" +
+    encodeURIComponent(checkboxValueAEnviar);
 });
 
-$('input[type="number"]').on('input', function() {
+$('input[type="number"]').on("input", function () {
   onlyNumberAmount(this);
 });
-
 function onlyNumberAmount(input) {
-  let v = $(input).val().replace(/\D+/g, '');
-  if (v.length > 14) v = v.slice(0, 14);
-  $(input).val(
-    v.replace(/(\d)(\d\d)$/, "$1.$2")
-     .replace(/(^\d{1,3}|\d{3})(?=(?:\d{3})+(?:\.|$))/g, '$1.')
+  let $input = $(input);
+  let v = $input.val().replace(/[^\d]/g, '');
+
+  if (v.length > 14) {
+    v = v.slice(0, 14);
+  }
+
+  $input.val(
+    v.replace(/^0*(\d+)(\d{2})$/, "$1.$2")  
+     .replace(/(\d)(?=(?:\d{3})+(?:\.|$))/g, '$1.')
   );
 }
 
 $("#BN").change(function () {
   if ($(this).is(":checked")) {
-      ocultarTodosLosElementosP()
+    ocultarTodosLosElementosP();
   }
 });
 
@@ -127,13 +206,13 @@ function getParameterByName(name, url) {
   if (!url) url = window.location.href;
   name = name.replace(/[\[\]]/g, "\\$&");
   let regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-      results = regex.exec(url);
+    results = regex.exec(url);
   if (!results) return null;
-  if (!results[2]) return '';
+  if (!results[2]) return "";
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-function NextButton(){
+function NextButton() {
   if (IsCodeFull && IsRadioSelected) {
     On();
   } else {
@@ -142,13 +221,13 @@ function NextButton(){
 }
 
 function On() {
-  if(checkboxValueAEnviar != "")
-  $(".btn2").html(
-    "CONTINUAR" +
-      "<img src=" +
-      "../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector.svg" +
-      ">"
-  );
+  if (checkboxValueAEnviar != "")
+    $(".btn2").html(
+      "CONTINUAR" +
+        "<img src=" +
+        "../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector.svg" +
+        ">"
+    );
   $(".btn2").prop("disabled", false);
   $(".btn2").css({ color: "rgba(255, 255, 255, 1)" });
   $(".btn2").css({ "background-color": "rgba(197, 20, 22, 1)" });
@@ -170,107 +249,115 @@ function Off() {
   $(".btn2").css({ cursor: "default" });
 }
 
-function aparecerBN(){
-  if(variableRecibida == "Banco"){
-    $('#OptionContent').append(`
+function aparecerBN() {
+  if (variableRecibida == "Banco") {
+    $("#OptionContent").append(`
     <div class="container">
       <p class="label">1. Entidad a transferir</p>
       <div>
         <div class="checkbox solobn">
           <label class="container checkboxlabel">
             <input type="checkbox" class="black" name="ritem" id="BN" value="BN" data-target="BN">
-            <span class="checkmark"></span>
+            <img class="checkbox-image" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
             <label class="BnLabel"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg" alt=""> Banco de la Nación</label>
           </label>
         </div>
       </div>
-    </div>`)
-  }else{
-    $('#OptionContent').append(`
+    </div>`);
+
+    $(".gallery-wrap").empty();
+  } else {
+    $("#OptionContent").append(`
     <div class="container">
      <p class="label">1. Entidad a transferir</p>
      <div>
        <div class="checkbox">
          <label class="container checkboxlabel">
            <input type="checkbox" class="black" name="ritem" id="BN" value="BN" data-target="BN">
-           <span class="checkmark"></span>
+           <img class="checkbox-image" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
            <label class="BnLabel"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg" alt=""> Banco de la Nación</label>
          </label>
        </div>
      </div>
    </div>
-  <div style="margin-bottom: 20.26px;">
+  <div style="margin-bottom: 26.26px;">
     <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Line.svg" alt="">
   </div>
- `)
+ `);
   }
 }
 
-function aparecerPLIN(){ 
-  $("#EntidadesCarousel").append(`
+function aparecerPLIN() {
+  $("#EntidadSPAN").append(`
+  <span>
 <div class="EntidadSquare">
       <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/plinlogo.svg" alt="">
       <label class="container checkboxlabel">
         <input type="checkbox" class="black" name="ritem" value="Plin" data-target="Plin">
-        <span class="checkmark"></span>
+        <img class="checkbox-image" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
       </label>
       <p id="Plin">PLIN</p>
   </div>
-`)
+  </span>
+`);
 }
 
-function aparecerYAPE(){ 
-  $("#EntidadesCarousel").append(`
+function aparecerYAPE() {
+  $("#EntidadSPAN").append(`
+  <span>
   <div class="EntidadSquare">
       <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/yapelogo.svg" alt="">
       <label class="container checkboxlabel">
         <input type="checkbox" class="black" name="ritem" value="Yape" data-target="Yape">
-        <span class="checkmark"></span>
+        <img class="checkbox-image" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
       </label>
       <p id="Yape">YAPE</p>
     </div>
-  `)
+  </span>
+  `);
 }
 
-function aparecerCAJAAREQUIPA(){
-  $("#EntidadesCarousel").append(`
+function aparecerCAJAAREQUIPA() {
+  $("#EntidadSPAN").append(`
+  <span>
 <div class="EntidadSquare">
     <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/cajaarequipalogo.svg" alt="">
     <label class="container checkboxlabel">
       <input type="checkbox" class="black" name="ritem" value="Caja Arequipa" data-target="CajaArequipa">
-      <span class="checkmark"></span>
+      <img class="checkbox-image" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
     </label>
     <p id="CajaArequipa">CAJA AREQUIPA</p>
   </div>
-`)
+  </span>
+`);
 }
 
-function aparecerBANCOPICHINCHA(){
-  $("#EntidadesCarousel").append(`
+function aparecerBANCOPICHINCHA() {
+  $("#EntidadSPAN").append(`
+  <span>
   <div class="EntidadSquare">
     <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bancopichinchalogo.svg" alt="">
     <label class="container checkboxlabel">
       <input type="checkbox" class="black" name="ritem" value="Banco Pichincha" data-target="BancoPichincha">
-      <span class="checkmark"></span>
+      <img class="checkbox-image" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
     </label>
     <p id="BancoPichincha">BANCO PICHINCHA</p>
   </div>
-`)
+  </span>
+`);
 }
 
-function SOLOPLINSIMULACION(){
-  $('#OptionContent').append(` 
-  <div class="container">
-    <p class="label">1. Entidad a transferir</p>
-    <div id="EntidadesCarousel" style="display: flex; justify-content: flex-start;">
-      <div class="EntidadSquare">
-        <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/plinlogo.svg" alt="">
-        <label class="container checkboxlabel">
-          <input type="checkbox" class="black" name="ritem" value="Plin" data-target="Plin">
-          <span class="checkmark"></span>
-        </label>
-        <p id="Plin">PLIN</p>
-      </div>
-  </div> 
-`)
+function SOLOPLINSIMULACION() {
+  $("#EntidadSPAN").append(`
+  <span>
+<div class="EntidadSquare">
+      <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/plinlogo.svg" alt="">
+      <label class="container checkboxlabel">
+        <input type="checkbox" class="black" name="ritem" value="Plin" data-target="Plin">
+        <img class="checkbox-image" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
+      </label>
+      <p id="Plin">PLIN</p>
+  </div>
+  </span>
+`);
 }

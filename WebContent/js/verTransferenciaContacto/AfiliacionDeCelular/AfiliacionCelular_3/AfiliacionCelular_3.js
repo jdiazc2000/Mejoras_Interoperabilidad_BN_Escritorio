@@ -52,7 +52,7 @@ function Off(){
 }
 
 $(".btn1").click(function(){
-       document.location.href="../../../index.html"
+       document.location.href="../AfiliacionCelular_1/AfiliacionCelular_1.html"
 })
 
 $(".btn2").click(function(){

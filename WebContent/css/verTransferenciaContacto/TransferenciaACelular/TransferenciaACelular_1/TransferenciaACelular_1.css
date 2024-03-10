@@ -8,7 +8,6 @@
   src: url(../../../../imagenes/verTransferenciaContacto/Fonts/daxcompact-medium.ttf);
 }
 
-
 * {
   padding: 0;
   margin: 0;
@@ -24,7 +23,7 @@ body {
 #maindiv {
   width: 440px;
   display: grid;
-  align-content: center;  
+  align-content: center;
 }
 
 h1 {
@@ -154,18 +153,26 @@ header p {
 }
 
 .container input {
-  position: absolute;
+  position: relative;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
-  outline:none; 
+  outline: none;
 }
 
-::-webkit-input-placeholder { color: rgba(79, 79, 79, 1); }
-::-moz-placeholder { color: rgba(79, 79, 79, 1); }
-:-ms-input-placeholder { color: rgba(79, 79, 79, 1);; }
-.DestiBene input:-moz-placeholder {  color: rgba(79, 79, 79, 1); }
+::-webkit-input-placeholder {
+  color: rgba(79, 79, 79, 1);
+}
+::-moz-placeholder {
+  color: rgba(79, 79, 79, 1);
+}
+:-ms-input-placeholder {
+  color: rgba(79, 79, 79, 1);
+}
+.DestiBene input:-moz-placeholder {
+  color: rgba(79, 79, 79, 1);
+}
 
 .checkmark {
   position: absolute;
@@ -173,13 +180,14 @@ header p {
   width: 20px;
   background-color: rgba(191, 191, 191, 255);
   border-radius: 20px;
+  display: none;
 }
 
 .checkmark:after {
   content: "";
   position: absolute;
-  left: 8px;
-  top: 4px;
+  left: 3px;
+  top: 0px;
   width: 2px;
   height: 7px;
   border: solid rgba(79, 79, 79, 255);
@@ -188,6 +196,7 @@ header p {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .container input:checked ~ .checkmark:after {
   border: solid rgb(204, 204, 204);
 }
@@ -247,7 +256,7 @@ header p {
   height: 0;
   width: 0;
   position: sticky;
-  outline:none; 
+  outline: none;
 }
 
 .EntidadSquare .checkmark {
@@ -266,9 +275,6 @@ header p {
   color: rgba(39, 60, 78, 1);
 }
 
-.EntidadSquare label {
-  margin-bottom: 20.33px;
-}
 
 .MontoSolesContainer {
   border: solid 1px;
@@ -300,7 +306,7 @@ header p {
   letter-spacing: 0.10000000149011612px;
   text-align: right;
   color: rgba(79, 79, 79, 1);
-  outline:none; 
+  outline: none;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -309,7 +315,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-.MontoContainer h1{
+.MontoContainer h1 {
   font-family: Arial;
   font-size: 12px;
   font-weight: 400;
@@ -319,9 +325,65 @@ input[type="number"]::-webkit-outer-spin-button {
   color: rgba(79, 79, 79, 1);
 }
 
-.solobn{
+.solobn {
   display: grid;
   justify-content: start;
   margin-left: 20px;
   margin-bottom: 16px;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: scroll;
+
+}
+
+.gallery div {
+  width: 92%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  flex: none;
+  grid-gap: 0px 15px;
+}
+
+.gallery div img {
+  width: 100%;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 440px;
+  height: 130px;
+}
+
+#backBtn,
+#nextBtn {
+  width: 20px;
+  cursor: pointer;
+  margin: 0px;
+  margin-bottom: 130px;
+}
+
+.gallery .EntidadSquare {
+  grid-template-columns: auto;
+}
+
+.gallery .checkbox-image{
+  width: 20px;
+  height: 20px;
+}
+
+.checkboxlabel{
+  display: inline-flex;
+}
+
+.container{
+  margin-bottom: 5px;
 }
