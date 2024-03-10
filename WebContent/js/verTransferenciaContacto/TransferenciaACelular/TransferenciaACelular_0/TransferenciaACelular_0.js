@@ -59,7 +59,7 @@ function Off(){
 }
 
 $(".btn1").click(function(){
-    history.back()
+    document.location.href="../../verTransferenciaContacto_main.html"
 })
 
 $(".btn2").click(function(){

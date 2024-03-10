@@ -17,6 +17,8 @@ $(document).ready(function () {
     aparecerYAPE();
     aparecerCAJAAREQUIPA();
     aparecerBANCOPICHINCHA();
+    $("#backBtn").css("display","block");
+    $("#nextBtn").css("display","block");
   } else if (variableRecibida == "Banco") {
     aparecerBN();
   } else {
@@ -171,7 +173,7 @@ $(".btn1").click(function () {
 
 $(".btn2").click(function () {
   document.location.href =
-    "../TransferenciaACelular_3/TransferenciaACelular_3.html?variable=" +
+    "../TransferenciaACelular_2/TransferenciaACelular_2.html?variable=" +
     encodeURIComponent(checkboxValueAEnviar);
 });
 
@@ -251,6 +253,8 @@ function Off() {
 
 function aparecerBN() {
   if (variableRecibida == "Banco") {
+    $(".gallery-wrap").css("display","none");
+
     $("#OptionContent").append(`
     <div class="container">
       <p class="label">1. Entidad a transferir</p>
@@ -264,8 +268,6 @@ function aparecerBN() {
         </div>
       </div>
     </div>`);
-
-    $(".gallery-wrap").empty();
   } else {
     $("#OptionContent").append(`
     <div class="container">
@@ -348,9 +350,19 @@ function aparecerBANCOPICHINCHA() {
 }
 
 function SOLOPLINSIMULACION() {
+
+  $(".gallery-wrap").css("justify-content","start");
+  $("#backBtn").css("display","none");
+  $("#nextBtn").css("display","none");
+
+  $("#OptionContent").append(`
+  <div class="container">
+    <p class="label">1. Entidad a transferir</p>
+  </div>`);
+  
   $("#EntidadSPAN").append(`
   <span>
-<div class="EntidadSquare">
+  <div class="EntidadSquare">
       <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/plinlogo.svg" alt="">
       <label class="container checkboxlabel">
         <input type="checkbox" class="black" name="ritem" value="Plin" data-target="Plin">
