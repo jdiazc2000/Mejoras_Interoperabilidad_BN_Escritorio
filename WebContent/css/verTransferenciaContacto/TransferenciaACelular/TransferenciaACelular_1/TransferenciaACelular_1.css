@@ -159,6 +159,7 @@ header p {
   cursor: pointer;
   height: 0;
   width: 0;
+  outline:none; 
 }
 
 ::-webkit-input-placeholder { color: rgba(79, 79, 79, 1); }
@@ -246,6 +247,7 @@ header p {
   height: 0;
   width: 0;
   position: sticky;
+  outline:none; 
 }
 
 .EntidadSquare .checkmark {
@@ -291,12 +293,14 @@ header p {
   text-align: right;
   border: none;
   font-family: Arial;
+  width: 340px;
   font-size: 20px;
   font-weight: 700;
   line-height: 23px;
   letter-spacing: 0.10000000149011612px;
   text-align: right;
   color: rgba(79, 79, 79, 1);
+  outline:none; 
 }
 
 input[type="number"]::-webkit-inner-spin-button,

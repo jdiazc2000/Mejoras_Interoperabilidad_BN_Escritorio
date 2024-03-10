@@ -41,7 +41,7 @@ $('input[type="radio"]').change(function() {
 });
 
 function On(){
-    $(".btn2").html("CONTINUAR"+"<img src=" + "../../../assets/VECTOR-ICON-MV/Vector.svg" + ">")
+    $(".btn2").html("CONTINUAR"+"<img src=" + "../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector.svg" + ">")
     $(".btn2").prop("disabled",false)
     $(".btn2").css({"color": "rgba(255, 255, 255, 1)"})
     $(".btn2").css({"background-color": "rgba(197, 20, 22, 1)"})
@@ -50,7 +50,7 @@ function On(){
 }
 
 function Off(){
-    $(".btn2").html("CONTINUAR"+"<img src=" + "../../../assets/VECTOR-ICON-MV/Vector-1.svg" + ">")
+    $(".btn2").html("CONTINUAR"+"<img src=" + "../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" + ">")
     $(".btn2").prop("disabled",true)
     $(".btn2").css({"color": "rgba(79, 79, 79, 1)"})
     $(".btn2").css({"background-color": "rgba(215, 215, 215, 1)"})
@@ -64,6 +64,13 @@ $(".btn1").click(function(){
 
 $(".btn2").click(function(){
     let radiobuttonselectedvalue = $('input[name="ritem"]:checked').val()
-    document.location.href="../../TransferenciaACelular/TransferenciaACelular_1/index.html?variable="  + encodeURIComponent(radiobuttonselectedvalue);
+    
+    //NOTA ELIMINAR SIGUIENTE CONDICIONAL EN PROD - SOLO HECHO PARA PRUEBAS DE NÚMERO SOLO AFILIADO AL BANCO
+    
+    if($("#Celular").val() === '000000000'){
+        radiobuttonselectedvalue = "Banco"
+    }
+
+    document.location.href="../TransferenciaACelular_1/TransferenciaACelular_1.html?variable="  + encodeURIComponent(radiobuttonselectedvalue);
 })
 

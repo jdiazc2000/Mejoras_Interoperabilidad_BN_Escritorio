@@ -9,93 +9,16 @@ $(document).ready(function () {
   console.log("Variable recibida:", variableRecibida);
 
   if(variableRecibida == "Nuevo"){
-    $('#OptionContent').append(`
-  <div class="container">
-    <p class="label">1. Entidad a transferir</p>
-    <div>
-      <div class="checkbox">
-        <label class="container checkboxlabel">
-          <input type="checkbox" class="black" name="ritem" id="BN" value="BN" data-target="BN">
-          <span class="checkmark"></span>
-          <label class="BnLabel"><img src="../../../assets/VECTOR-ICON-MV/bnlogo.svg" alt=""> Banco de la Nación</label>
-        </label>
-      </div>
-    </div>
-  </div>
-
-  <div style="margin-bottom: 20.26px;">
-    <img src="../../../assets/Svgs/Line.svg" alt="">
-  </div>
-
-  <div id="EntidadesCarousel">
-    <div class="EntidadSquare">
-      <img src="../../../assets/VECTOR-ICON-MV/plinlogo.svg" alt="">
-      <label class="container checkboxlabel">
-        <input type="checkbox" class="black" name="ritem" value="Plin" data-target="Plin">
-        <span class="checkmark"></span>
-      </label>
-      <p id="Plin">PLIN</p>
-    </div>
-    <div class="EntidadSquare">
-    <img src="../../../assets/VECTOR-ICON-MV/yapelogo.svg" alt="">
-    <label class="container checkboxlabel">
-      <input type="checkbox" class="black" name="ritem" value="Yape" data-target="Yape">
-      <span class="checkmark"></span>
-    </label>
-    <p id="Yape">YAPE</p>
-  </div>
-  <div class="EntidadSquare">
-    <img src="../../../assets/VECTOR-ICON-MV/cajaarequipalogo.svg" alt="">
-    <label class="container checkboxlabel">
-      <input type="checkbox" class="black" name="ritem" value="Caja Arequipa" data-target="CajaArequipa">
-      <span class="checkmark"></span>
-    </label>
-    <p id="CajaArequipa">CAJA AREQUIPA</p>
-  </div>
-  <div class="EntidadSquare">
-    <img src="../../../assets/VECTOR-ICON-MV/bancopichinchalogo.svg" alt="">
-    <label class="container checkboxlabel">
-      <input type="checkbox" class="black" name="ritem" value="Banco Pichincha" data-target="BancoPichincha">
-      <span class="checkmark"></span>
-    </label>
-    <p id="BancoPichincha">BANCO PICHINCHA</p>
-  </div>
-
-
-  </div>
-`);
+  aparecerBN();  
+  aparecerPLIN();
+  aparecerYAPE();
+  aparecerCAJAAREQUIPA();
+  aparecerBANCOPICHINCHA();
   }else if(variableRecibida == "Banco"){
-    $('#OptionContent').append(`
-  <div class="container">
-    <p class="label">1. Entidad a transferir</p>
-    <div>
-      <div class="checkbox solobn">
-        <label class="container checkboxlabel">
-          <input type="checkbox" class="black" name="ritem" id="BN" value="BN" data-target="BN">
-          <span class="checkmark"></span>
-          <label class="BnLabel"><img src="../../../assets/VECTOR-ICON-MV/bnlogo.svg" alt=""> Banco de la Nación</label>
-        </label>
-      </div>
-    </div>
-  </div>`)
+    aparecerBN();
   }
   else{
-    $('#OptionContent').append(`
-   
-  <div class="container">
-    <p class="label">1. Entidad a transferir</p>
-    <div id="EntidadesCarousel" style="display: flex; justify-content: flex-start;">
-      <div class="EntidadSquare">
-        <img src="../../../assets/VECTOR-ICON-MV/plinlogo.svg" alt="">
-        <label class="container checkboxlabel">
-          <input type="checkbox" class="black" name="ritem" value="Plin" data-target="Plin">
-          <span class="checkmark"></span>
-        </label>
-        <p id="Plin">PLIN</p>
-      </div>
-  </div>
-    
-    `)
+    SOLOPLINSIMULACION();
   }
 });
 
@@ -128,17 +51,19 @@ $(document).on("change", '.EntidadSquare input[type="checkbox"], #BN', function 
     }
   }
 
-  //console.log("IsRadioSelected:", IsRadioSelected);;
   checkboxValueAEnviar = checkboxValue.toUpperCase();
-  console.log("Checkbox Value:", checkboxValue.toUpperCase()); // Imprime el valor del checkbox seleccionado
+  console.log("Checkbox Value:", checkboxValue.toUpperCase());
   NextButton();
 });
 
 $("#monto").on("input", function () {
   let montoValue = $("#monto").val().replace(/\D+/g, '');
-  console.log( $("#monto").val())
   const minValue = 20;
   const maxValue = 50000;
+
+  if (montoValue.toString().startsWith("00")) {
+    montoValue = '';
+  }
 
   if (montoValue !== '' && !isNaN(montoValue)) {
     montoValue = parseInt(montoValue, 10);
@@ -172,12 +97,21 @@ $(".btn1").click(function () {
 });
 
 $(".btn2").click(function () {
-  document.location.href="../../TransferenciaACelular/TransferenciaACelular_2/index.html?variable="  + encodeURIComponent(checkboxValueAEnviar);
+  document.location.href="../TransferenciaACelular_3/TransferenciaACelular_3.html?variable="  + encodeURIComponent(checkboxValueAEnviar);
 });
 
 $('input[type="number"]').on('input', function() {
   onlyNumberAmount(this);
 });
+
+function onlyNumberAmount(input) {
+  let v = $(input).val().replace(/\D+/g, '');
+  if (v.length > 14) v = v.slice(0, 14);
+  $(input).val(
+    v.replace(/(\d)(\d\d)$/, "$1.$2")
+     .replace(/(^\d{1,3}|\d{3})(?=(?:\d{3})+(?:\.|$))/g, '$1.')
+  );
+}
 
 $("#BN").change(function () {
   if ($(this).is(":checked")) {
@@ -187,15 +121,6 @@ $("#BN").change(function () {
 
 function ocultarTodosLosElementosP() {
   $(".EntidadSquare p").css("visibility", "hidden");
-}
-
-function onlyNumberAmount(input) {
-  let v = $(input).val().replace(/\D+/g, '');
-  if (v.length > 14) v = v.slice(0, 14);
-  $(input).val(
-    v.replace(/(\d)(\d\d)$/, "$1.$2")
-     .replace(/(^\d{1,3}|\d{3})(?=(?:\d{3})+(?:\.|$))/g, '$1.')
-  );
 }
 
 function getParameterByName(name, url) {
@@ -221,7 +146,7 @@ function On() {
   $(".btn2").html(
     "CONTINUAR" +
       "<img src=" +
-      "../../../assets/VECTOR-ICON-MV/Vector.svg" +
+      "../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector.svg" +
       ">"
   );
   $(".btn2").prop("disabled", false);
@@ -235,7 +160,7 @@ function Off() {
   $(".btn2").html(
     "CONTINUAR" +
       "<img src=" +
-      "../../../assets/VECTOR-ICON-MV/Vector-1.svg" +
+      "../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" +
       ">"
   );
   $(".btn2").prop("disabled", true);
@@ -243,4 +168,109 @@ function Off() {
   $(".btn2").css({ "background-color": "rgba(215, 215, 215, 1)" });
   $(".btn2").css({ "border-color": "rgba(215, 215, 215, 1)" });
   $(".btn2").css({ cursor: "default" });
+}
+
+function aparecerBN(){
+  if(variableRecibida == "Banco"){
+    $('#OptionContent').append(`
+    <div class="container">
+      <p class="label">1. Entidad a transferir</p>
+      <div>
+        <div class="checkbox solobn">
+          <label class="container checkboxlabel">
+            <input type="checkbox" class="black" name="ritem" id="BN" value="BN" data-target="BN">
+            <span class="checkmark"></span>
+            <label class="BnLabel"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg" alt=""> Banco de la Nación</label>
+          </label>
+        </div>
+      </div>
+    </div>`)
+  }else{
+    $('#OptionContent').append(`
+    <div class="container">
+     <p class="label">1. Entidad a transferir</p>
+     <div>
+       <div class="checkbox">
+         <label class="container checkboxlabel">
+           <input type="checkbox" class="black" name="ritem" id="BN" value="BN" data-target="BN">
+           <span class="checkmark"></span>
+           <label class="BnLabel"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg" alt=""> Banco de la Nación</label>
+         </label>
+       </div>
+     </div>
+   </div>
+  <div style="margin-bottom: 20.26px;">
+    <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Line.svg" alt="">
+  </div>
+ `)
+  }
+}
+
+function aparecerPLIN(){ 
+  $("#EntidadesCarousel").append(`
+<div class="EntidadSquare">
+      <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/plinlogo.svg" alt="">
+      <label class="container checkboxlabel">
+        <input type="checkbox" class="black" name="ritem" value="Plin" data-target="Plin">
+        <span class="checkmark"></span>
+      </label>
+      <p id="Plin">PLIN</p>
+  </div>
+`)
+}
+
+function aparecerYAPE(){ 
+  $("#EntidadesCarousel").append(`
+  <div class="EntidadSquare">
+      <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/yapelogo.svg" alt="">
+      <label class="container checkboxlabel">
+        <input type="checkbox" class="black" name="ritem" value="Yape" data-target="Yape">
+        <span class="checkmark"></span>
+      </label>
+      <p id="Yape">YAPE</p>
+    </div>
+  `)
+}
+
+function aparecerCAJAAREQUIPA(){
+  $("#EntidadesCarousel").append(`
+<div class="EntidadSquare">
+    <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/cajaarequipalogo.svg" alt="">
+    <label class="container checkboxlabel">
+      <input type="checkbox" class="black" name="ritem" value="Caja Arequipa" data-target="CajaArequipa">
+      <span class="checkmark"></span>
+    </label>
+    <p id="CajaArequipa">CAJA AREQUIPA</p>
+  </div>
+`)
+}
+
+function aparecerBANCOPICHINCHA(){
+  $("#EntidadesCarousel").append(`
+  <div class="EntidadSquare">
+    <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bancopichinchalogo.svg" alt="">
+    <label class="container checkboxlabel">
+      <input type="checkbox" class="black" name="ritem" value="Banco Pichincha" data-target="BancoPichincha">
+      <span class="checkmark"></span>
+    </label>
+    <p id="BancoPichincha">BANCO PICHINCHA</p>
+  </div>
+`)
+}
+
+function SOLOPLINSIMULACION(){
+  $('#OptionContent').append(` 
+  <div class="container">
+    <p class="label">1. Entidad a transferir</p>
+    <div id="EntidadesCarousel" style="display: flex; justify-content: flex-start;">
+      <div class="EntidadSquare">
+        <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/plinlogo.svg" alt="">
+        <label class="container checkboxlabel">
+          <input type="checkbox" class="black" name="ritem" value="Plin" data-target="Plin">
+          <span class="checkmark"></span>
+        </label>
+        <p id="Plin">PLIN</p>
+      </div>
+  </div> 
+`)
 }
