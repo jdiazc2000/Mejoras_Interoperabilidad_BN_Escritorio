@@ -2,7 +2,7 @@ let variableRecibida = getParameterByName("variable");
 console.log(variableRecibida)
 
 $(document).ready(function(){
-       if(variableRecibida != "" && variableRecibida != null && variableRecibida != undefined){
+       if(variableRecibida != "null" && variableRecibida != null){
               $('#Number').text(variableRecibida)
 
               $('#table').append(
@@ -34,9 +34,6 @@ $(document).ready(function(){
              </table>
               `)
        }else{
-
-         $(".Number").text('947 058 652')
-
          $('#table').append(
             `<table>
           <tr>
@@ -65,6 +62,7 @@ $(document).ready(function(){
           </tr>  
           </table>
            `)
+           $(".Number").text('947 058 652')
        }
 });
 
@@ -88,7 +86,7 @@ function Off(){
 
 
 $(".btn1").click(function(){
-   document.location.href="../DatosAfiliados_0/DatosAfiliados_1.html"
+  document.location.href="../DatosAfiliados_0/DatosAfiliados_0.html"
 })
 
 $(".btn2").click(function(){

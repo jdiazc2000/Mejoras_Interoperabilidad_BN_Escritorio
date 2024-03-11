@@ -21,8 +21,16 @@ $(document).ready(function () {
     $("#nextBtn").css("display","block");
   } else if (variableRecibida == "Banco") {
     aparecerBN();
-  } else {
+    
+  } else if (variableRecibida == "Simu"){
     SOLOPLINSIMULACION();
+  }
+  else{
+    aparecerBN();
+    aparecerPLIN();
+    aparecerYAPE();
+    aparecerCAJAAREQUIPA();
+    aparecerBANCOPICHINCHA();
   }
 
   let numberOfSpans = $("#EntidadSPAN span").length + $("#EntidadSPAN2 span").length;

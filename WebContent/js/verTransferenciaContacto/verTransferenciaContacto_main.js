@@ -12,7 +12,6 @@ $("#TransferenciaBtn").click(function(){
 })
 
 
-
 $("#DatosAfiliadosBtn").click(function(){
        document.location.href="DatosAfiliados/DatosAfiliados_0/DatosAfiliados_0.html"
 })

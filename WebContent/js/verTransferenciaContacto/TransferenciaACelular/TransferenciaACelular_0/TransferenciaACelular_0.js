@@ -25,10 +25,8 @@ $("#Celular").on("input", function() {
 $('input[type="radio"]').change(function() {
     if($('input[name="ritem"]:checked').val() !== null){
         var valorSeleccionado = $('input[name="ritem"]:checked').val();
-        //console.log("Valor seleccionado: " + valorSeleccionado);
         IsRadioSelected = true
     }else{
-        //console.log("no")
         IsRadioSelected = false
     }
 

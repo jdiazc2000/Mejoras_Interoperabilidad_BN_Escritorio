@@ -1,8 +1,7 @@
 let variableRecibida = getParameterByName("variable");
 
 $(document).ready(function(){
-    if(variableRecibida != "" && variableRecibida != null && variableRecibida != undefined){
-      console.log('Entro a la primera tabla')
+    if(variableRecibida != "null" && variableRecibida != null){
         $('#Number').text(variableRecibida)
 
         $('#container').append(
@@ -47,8 +46,6 @@ $(document).ready(function(){
 
         
  }else{
-
-  console.log('Entro a la segunda tabla')
     $('#container').append(
         ` 
         <h2 id="Title"></h2>
