@@ -67,7 +67,11 @@ $(document).ready(function () {
 
   nextBtn.on("click", function () {
     if(numberOfSpans === numberOfSpans){
-  
+      if(itemN != 1){
+        backBtn.attr('src', '../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-13.svg');
+        backBtn.css('transform', 'rotate(180deg)');
+      }
+
       if (itemN < numberOfSpans / 1) {
         scrollContainer.css("scroll-behavior", "smooth");
         scrollContainer.scrollLeft(scrollContainer.scrollLeft() + 80);
