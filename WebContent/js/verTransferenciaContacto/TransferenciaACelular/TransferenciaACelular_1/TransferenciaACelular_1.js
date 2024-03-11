@@ -6,7 +6,7 @@ let variableRecibida = getParameterByName("variable");
 let scrollContainer = $(".gallery");
 let backBtn = $("#backBtn");
 let nextBtn = $("#nextBtn");
-let itemN = 1;
+let itemN = 4;
 
 $(document).ready(function () {
   Off();
@@ -33,29 +33,66 @@ $(document).ready(function () {
     aparecerBANCOPICHINCHA();
   }
 
-  let numberOfSpans = $("#EntidadSPAN span").length + $("#EntidadSPAN2 span").length;
+  let numberOfSpans = $("#EntidadSPAN span").length + $("#EntidadSPAN2 span").length ;
   console.log(numberOfSpans);
 
+  if(numberOfSpans <= 4){
+    console.log("aa")
+    nextBtn.attr('src', '../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-12.svg');
+    nextBtn.css('transform', 'rotate(180deg)');
+    nextBtn.prop('disabled', true);
+    backBtn.attr('src', '../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-12.svg');
+    backBtn.css('transform', 'rotate(0deg)');
+  }
+
   backBtn.on("click", function () {
-    if (itemN === 1) {
-      console.log("ay");
-    } else {
-      scrollContainer.css("scroll-behavior", "smooth");
-      scrollContainer.scrollLeft(scrollContainer.scrollLeft() - 80);
-      itemN--;
-    }
-    console.log(itemN);
+    if(numberOfSpans >= 4){
+      if (itemN > 4) {
+        scrollContainer.css("scroll-behavior", "smooth");
+        scrollContainer.scrollLeft(scrollContainer.scrollLeft() - 80);
+        backBtn.attr('src', '../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-13.svg');
+        backBtn.css('transform', 'rotate(180deg)');+
+        itemN--;
+        nextBtn.attr('src', '../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-13.svg');
+        nextBtn.css('transform', 'rotate(0deg)');
+      } 
+
+      if(itemN === 4){
+        backBtn.attr('src', '../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-12.svg');
+        backBtn.css('transform', 'rotate(0deg)');
+      }
+    } 
   });
 
   nextBtn.on("click", function () {
-    if (itemN < numberOfSpans / 2) {
-      scrollContainer.css("scroll-behavior", "smooth");
-      scrollContainer.scrollLeft(scrollContainer.scrollLeft() + 80);
-      itemN++;
-    } else {
-      console.log("No se puede avanzar más, último elemento alcanzado");
+    if(numberOfSpans != 4){
+      if(itemN == 4){
+        backBtn.attr('src', '../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-13.svg');
+        backBtn.css('transform', 'rotate(180deg)');
+      }else{
+
+        nextBtn.attr('src', '../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-12.svg');
+        nextBtn.css('transform', 'rotate(180deg)');
+      }
+  
+      if (itemN < numberOfSpans / 1) {
+        scrollContainer.css("scroll-behavior", "smooth");
+        scrollContainer.scrollLeft(scrollContainer.scrollLeft() + 80);
+        itemN++;
+      } else {
+        nextBtn.attr('src', '../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-12.svg');
+        nextBtn.css('transform', 'rotate(180deg)');
+      }
+
+      if(itemN > numberOfSpans){
+        nextBtn.attr('src', '../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-12.svg');
+        nextBtn.css('transform', 'rotate(180deg)');
+      }else{
+        backBtn.attr('src', '../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-13.svg');
+        backBtn.css('transform', 'rotate(180deg)');
+      }
+
     }
-    console.log(itemN);
   });
 
   let checkboxes = $(".checkboxlabel input[type='checkbox']");
