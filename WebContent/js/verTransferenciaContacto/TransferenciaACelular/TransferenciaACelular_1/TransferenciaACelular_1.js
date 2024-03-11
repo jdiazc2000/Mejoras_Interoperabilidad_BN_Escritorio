@@ -65,15 +65,7 @@ $(document).ready(function () {
   });
 
   nextBtn.on("click", function () {
-    if(numberOfSpans != 4){
-      if(itemN == 4){
-        backBtn.attr('src', '../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-13.svg');
-        backBtn.css('transform', 'rotate(180deg)');
-      }else{
-
-        nextBtn.attr('src', '../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-12.svg');
-        nextBtn.css('transform', 'rotate(180deg)');
-      }
+    if(numberOfSpans === numberOfSpans){
   
       if (itemN < numberOfSpans / 1) {
         scrollContainer.css("scroll-behavior", "smooth");
@@ -84,7 +76,8 @@ $(document).ready(function () {
         nextBtn.css('transform', 'rotate(180deg)');
       }
 
-      if(itemN > numberOfSpans){
+      //console.log(itemN, numberOfSpans)
+      if(itemN === numberOfSpans){
         nextBtn.attr('src', '../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-12.svg');
         nextBtn.css('transform', 'rotate(180deg)');
       }else{
