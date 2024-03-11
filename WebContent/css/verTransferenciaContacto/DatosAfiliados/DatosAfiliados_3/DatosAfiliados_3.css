@@ -22,7 +22,7 @@ body {
 
 #maindiv {
   display: grid;
-  align-content: center;  
+  align-content: start;   
 }
 
 .OkLogo {

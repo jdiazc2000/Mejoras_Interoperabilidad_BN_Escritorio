@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <title>Afiliación Celular</title>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_2/AfiliacionCelular_2.css">
 </head>
@@ -30,7 +31,7 @@
     </div>
 
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>   
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>   
 <script type="text/javascript" src="<%=request.getContextPath()%>/js/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_2/AfiliacionCelular_2.js"></script>   
 </body>
 </html>

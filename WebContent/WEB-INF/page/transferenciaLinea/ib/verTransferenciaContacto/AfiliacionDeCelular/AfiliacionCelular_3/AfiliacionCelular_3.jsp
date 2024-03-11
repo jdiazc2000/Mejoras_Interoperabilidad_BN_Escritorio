@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <title>Afiliación Celular</title>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_3/AfiliacionCelular_3.css">
   </head>
@@ -32,8 +33,8 @@
 
       <div>
         <p class="label">
-          “Para continuar con la afiliaci&oacute;n, debes de leer y aceptar los
-          t&eacute;rminos y condiciones que te brindamos a continuaci&oacute;n”
+          &quot;Para continuar con la afiliaci&oacute;n, debes de leer y aceptar los
+          t&eacute;rminos y condiciones que te brindamos a continuaci&oacute;n&quot;
         </p>
 
         <h5>T&eacute;rminos y condiciones del servicio de Transferencia a celular.</h5>
@@ -73,7 +74,7 @@
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="<%=request.getContextPath()%>/js/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_3/AfiliacionCelular_3.js"></script>   
   </body>
 </html>

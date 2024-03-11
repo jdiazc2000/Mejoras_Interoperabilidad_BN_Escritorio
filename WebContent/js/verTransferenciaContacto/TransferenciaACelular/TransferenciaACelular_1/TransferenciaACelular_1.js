@@ -12,24 +12,24 @@ $(document).ready(function () {
   Off();
   console.log("Variable recibida:", variableRecibida);
   if (variableRecibida == "Nuevo") {
-    aparecerBN();
-    aparecerPLIN();
-    aparecerYAPE();
-    aparecerCAJAAREQUIPA();
-    aparecerBANCOPICHINCHA();
+    //aparecerBN();
+    //aparecerPLIN();
+    //aparecerYAPE();
+    //aparecerCAJAAREQUIPA();
+    //aparecerBANCOPICHINCHA();
     $("#backBtn").css("display","block");
     $("#nextBtn").css("display","block");
   } else if (variableRecibida == "Banco") {
-    aparecerBN();
+    //aparecerBN();
   } else if (variableRecibida == "Plin"){
-    SOLOPLINSIMULACION();
+    //SOLOPLINSIMULACION();
   }
   else{
-    aparecerBN();
-    aparecerPLIN();
-    aparecerYAPE();
-    aparecerCAJAAREQUIPA();
-    aparecerBANCOPICHINCHA();
+    //aparecerBN();
+    //aparecerPLIN();
+    //aparecerYAPE();
+    //aparecerCAJAAREQUIPA();
+    //aparecerBANCOPICHINCHA();
     $("#backBtn").css("display","block");
     $("#nextBtn").css("display","block");
   }

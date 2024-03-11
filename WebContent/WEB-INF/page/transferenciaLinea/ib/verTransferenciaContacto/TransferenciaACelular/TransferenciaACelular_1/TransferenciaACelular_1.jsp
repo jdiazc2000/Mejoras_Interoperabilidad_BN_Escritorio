@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <title>Afiliación Celular</title>
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_1/TransferenciaACelular_1.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_1/TransferenciaACelular_1.css">
   </head>
   <body>
     <div id="maindiv">
@@ -15,31 +16,82 @@
     </header>
 
     <div id="OptionContent">
-      
+      <div class="container">
+        <p class="label">1. Entidad a transferir</p>
+        <div>
+          <div class="checkbox">
+            <label class="container checkboxlabel">
+              <input type="checkbox" class="black" name="ritem" id="BN" value="BN" data-target="BN">
+              <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
+              <label class="BnLabel"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bnlogo.svg" alt=""> Banco de la Naci&oacute;n</label>
+            </label>
+          </div>
+        </div>
+      </div>
+     <div style="margin-bottom: 26.26px;">
+       <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Line.svg" alt="">
+     </div>
     </div>
 
     <div class="gallery-wrap">
-        <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-12.svg" alt="" id="backBtn">
+        <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-12.svg" alt="" id="backBtn">
         <div class="gallery">
         <div id="EntidadSPAN">
-
-        </div>
-        <div id="EntidadSPAN2">
-           
           <span>
             <div class="EntidadSquare">
-                  <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/plinlogo.svg" alt="">
+                  <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/plinlogo.svg" alt="">
                   <label class="container checkboxlabel">
                     <input type="checkbox" class="black" name="ritem" value="Plin" data-target="Plin">
-                    <img class="checkbox-image" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
+                    <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
                   </label>
                   <p id="Plin">PLIN</p>
               </div>
+              </span>
+          <span>
+            <div class="EntidadSquare">
+                <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/yapelogo.svg" alt="">
+                <label class="container checkboxlabel">
+                  <input type="checkbox" class="black" name="ritem" value="Yape" data-target="Yape">
+                  <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
+                </label>
+                <p id="Yape">YAPE</p>
+              </div>
             </span>
-
+            <span>
+              <div class="EntidadSquare">
+                  <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/cajaarequipalogo.svg" alt="">
+                  <label class="container checkboxlabel">
+                    <input type="checkbox" class="black" name="ritem" value="Caja Arequipa" data-target="CajaArequipa">
+                    <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
+                  </label>
+                  <p id="CajaArequipa">CAJA AREQUIPA</p>
+                </div>
+                </span>
+                <span>
+                  <div class="EntidadSquare">
+                    <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bancopichinchalogo.svg" alt="">
+                    <label class="container checkboxlabel">
+                      <input type="checkbox" class="black" name="ritem" value="Banco Pichincha" data-target="BancoPichincha">
+                      <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
+                    </label>
+                    <p id="BancoPichincha">BANCO PICHINCHA</p>
+                  </div>
+                  </span>
+        </div>
+        <div id="EntidadSPAN2">
+             <span>
+            <div class="EntidadSquare">
+                  <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/plinlogo.svg" alt="">
+                  <label class="container checkboxlabel">
+                    <input type="checkbox" class="black" name="ritem" value="Plin" data-target="Plin">
+                    <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
+                  </label>
+                  <p id="Plin">PLIN</p>
+              </div>
+              </span>
           </div>
         </div>
-        <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-13.svg" alt="" id="nextBtn">
+        <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-13.svg" alt="" id="nextBtn">
     </div>
 
     
@@ -54,15 +106,15 @@
 
       <div id="btndiv">
         <button class="btn1">
-          <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
+          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
         </button>
         <button class="btn2">
-          CONTINUAR <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" />
+          CONTINUAR <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" />
         </button>
       </div>
     </div>
   </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_1/TransferenciaACelular_1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="<<%=request.getContextPath()%>/js/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_1/TransferenciaACelular_1.js"></script>
   </body>
 </html>
