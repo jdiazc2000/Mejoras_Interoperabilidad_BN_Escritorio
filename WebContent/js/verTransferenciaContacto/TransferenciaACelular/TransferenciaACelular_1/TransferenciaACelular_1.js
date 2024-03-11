@@ -12,24 +12,24 @@ $(document).ready(function () {
   Off();
   console.log("Variable recibida:", variableRecibida);
   if (variableRecibida == "Nuevo") {
-    aparecerBN();
-    aparecerPLIN();
-    aparecerYAPE();
-    aparecerCAJAAREQUIPA();
-    aparecerBANCOPICHINCHA();
+    //aparecerBN();
+    //aparecerPLIN();
+    //aparecerYAPE();
+    //aparecerCAJAAREQUIPA();
+    //aparecerBANCOPICHINCHA();
     $("#backBtn").css("display","block");
     $("#nextBtn").css("display","block");
   } else if (variableRecibida == "Banco") {
-    aparecerBN();
+    //aparecerBN();
   } else if (variableRecibida == "Plin"){
-    SOLOPLINSIMULACION();
+    //SOLOPLINSIMULACION();
   }
   else{
-    aparecerBN();
-    aparecerPLIN();
-    aparecerYAPE();
-    aparecerCAJAAREQUIPA();
-    aparecerBANCOPICHINCHA();
+    //aparecerBN();
+    //aparecerPLIN();
+    //aparecerYAPE();
+    //aparecerCAJAAREQUIPA();
+    //aparecerBANCOPICHINCHA();
     $("#backBtn").css("display","block");
     $("#nextBtn").css("display","block");
   }
@@ -211,12 +211,12 @@ $('input[type="checkbox"]').change(function () {
 });
 
 $(".btn1").click(function () {
-  document.location.href="../TransferenciaACelular_0/TransferenciaACelular_0.jsp";
+  document.location.href="../TransferenciaACelular_0/TransferenciaACelular_0.html";
 });
 
 $(".btn2").click(function () {
   document.location.href =
-    "../TransferenciaACelular_2/TransferenciaACelular_2.jsp?variable=" +
+    "../TransferenciaACelular_2/TransferenciaACelular_2.html?variable=" +
     encodeURIComponent(checkboxValueAEnviar);
 });
 

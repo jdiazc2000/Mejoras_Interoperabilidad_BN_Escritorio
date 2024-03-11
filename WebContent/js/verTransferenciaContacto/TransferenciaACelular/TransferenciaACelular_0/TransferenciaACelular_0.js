@@ -57,7 +57,7 @@ function Off(){
 }
 
 $(".btn1").click(function(){
-    document.location.href="../../verTransferenciaContacto_main.jsp"
+    document.location.href="../../verTransferenciaContacto_main.html"
 })
 
 $(".btn2").click(function(){
@@ -69,6 +69,6 @@ $(".btn2").click(function(){
     }
     //NOTA ELIMINAR SIGUIENTE CONDICIONAL EN PROD - SOLO HECHO PARA PRUEBAS DE NÚMERO SOLO AFILIADO AL BANCO
 
-    document.location.href="../TransferenciaACelular_1/TransferenciaACelular_1.jsp?variable="  + encodeURIComponent(radiobuttonselectedvalue);
+    document.location.href="../TransferenciaACelular_1/TransferenciaACelular_1.html?variable="  + encodeURIComponent(radiobuttonselectedvalue);
 })
 

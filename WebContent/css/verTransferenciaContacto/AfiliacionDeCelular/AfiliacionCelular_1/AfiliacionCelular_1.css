@@ -24,7 +24,7 @@ body {
 #maindiv {
   width: 440px;
   display: grid;
-  align-content: center;  
+  align-content: start;  
 }
 
 h1 {

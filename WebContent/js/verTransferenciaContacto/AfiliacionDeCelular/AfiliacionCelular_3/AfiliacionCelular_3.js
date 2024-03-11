@@ -52,10 +52,10 @@ function Off(){
 }
 
 $(".btn1").click(function(){
-       document.location.href="../AfiliacionCelular_1/AfiliacionCelular_1.jsp"
+       document.location.href="../AfiliacionCelular_1/AfiliacionCelular_1.html"
 })
 
 $(".btn2").click(function(){
-       document.location.href="../AfiliacionCelular_4/AfiliacionCelular_4.jsp"
+       document.location.href="../AfiliacionCelular_4/AfiliacionCelular_4.html"
 })
 

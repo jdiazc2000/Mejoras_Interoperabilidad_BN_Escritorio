@@ -86,11 +86,11 @@ function Off(){
 
 
 $(".btn1").click(function(){
-  document.location.href="../DatosAfiliados_0/DatosAfiliados_0.jsp"
+  document.location.href="../DatosAfiliados_0/DatosAfiliados_0.html"
 })
 
 $(".btn2").click(function(){
-   document.location.href="../DatosAfiliados_3/DatosAfiliados_3.jsp?variable=" + encodeURIComponent(variableRecibida);
+   document.location.href="../DatosAfiliados_3/DatosAfiliados_3.html?variable=" + encodeURIComponent(variableRecibida);
 })
 
 function getParameterByName(name, url) {

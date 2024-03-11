@@ -51,7 +51,7 @@ function Off(){
 }
 
 $(".btn1").click(function(){
-       document.location.href="../../../index.jsp"
+       document.location.href="../../../index.html"
 })
 
 $(".btn2").click(function(){

@@ -55,11 +55,11 @@ function getParameterByName(name, url) {
 }
 
 $(".btn1").click(function(){
-       document.location.href="../TransferenciaACelular_1/TransferenciaACelular_1.jsp"
+       document.location.href="../TransferenciaACelular_1/TransferenciaACelular_1.html"
 })
 
 $(".btn2").click(function(){
-       document.location.href="../TransferenciaACelular_3/TransferenciaACelular_3.jsp?variable="  + encodeURIComponent(variableRecibida)
+       document.location.href="../TransferenciaACelular_3/TransferenciaACelular_3.html?variable="  + encodeURIComponent(variableRecibida)
 })
 
 

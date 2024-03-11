@@ -94,13 +94,13 @@ function Off(){
 
 
 $(".btn1").click(function(){
-   document.location.href="../../verTransferenciaContacto_main.jsp"
+   document.location.href="../../verTransferenciaContacto_main.html"
 })
 
 $(".btn2").click(function(){
    if($('input[name="ritem"]:checked').val() == "Desafiliarme"){
-      document.location.href="../DatosAfiliados_2/DatosAfiliados_2.jsp"
+      document.location.href="../DatosAfiliados_2/DatosAfiliados_2.html"
    }else{
-      document.location.href="../DatosAfiliados_1/DatosAfiliados_1.jsp?variable=" +encodeURIComponent($('#numeroCelular').val());
+      document.location.href="../DatosAfiliados_1/DatosAfiliados_1.html?variable=" +encodeURIComponent($('#numeroCelular').val());
    }
 })
