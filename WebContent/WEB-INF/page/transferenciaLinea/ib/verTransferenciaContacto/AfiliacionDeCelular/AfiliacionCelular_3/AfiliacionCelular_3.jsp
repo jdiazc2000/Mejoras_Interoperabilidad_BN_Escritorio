@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afiliación Celular</title>
-    <link rel="stylesheet" href="../../../../../../../css/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_3/AfiliacionCelular_3.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_3/AfiliacionCelular_3.css">
   </head>
   <body>
     <div id="maindiv">
-      <h1>Confirma tu afiliación</h1>
+      <h1>Confirma tu afiliaci&oacute;n</h1>
 
       <p class="label">
-        ¿Estás seguro que deseas afiliar este celular para realizar tus
+        ¿Est&aacute;s seguro que deseas afiliar este celular para realizar tus
         operaciones asociadas a tu cuenta?
       </p>
 
@@ -32,11 +32,11 @@
 
       <div>
         <p class="label">
-          “Para continuar con la afiliación, debes de leer y aceptar los
-          términos y condiciones que te brindamos a continuación”
+          “Para continuar con la afiliaci&oacute;n, debes de leer y aceptar los
+          t&eacute;rminos y condiciones que te brindamos a continuaci&oacute;n”
         </p>
 
-        <h5>Términos y condiciones del servicio de Transferencia a celular.</h5>
+        <h5>T&eacute;rminos y condiciones del servicio de Transferencia a celular.</h5>
 
         <iframe
           src="../AfiliacionCelular_3/TerminosYCondiciones - AfiliacionCelular_3/TerminosYCondiciones - AfiliacionCelular_3.html"
@@ -46,8 +46,8 @@
 
         <div class="checkbox">
           <label class="container checkboxlabel"
-            >He leído y aceptado los
-            <strong>términos y condiciones </strong>
+            >He le&iacute;do y aceptado los
+            <strong>t&eacute;rminos y condiciones </strong>
             del servicio de Transferencia a celular.
             <input type="checkbox" class="black" id="checkbox"/>
             <span class="checkmark"></span>
@@ -55,14 +55,14 @@
         </div>
 
         <form id="CodeValidation" name="CodeValidation">
-          <label for="code">Clave dinámica digital </label>
+          <label for="code">Clave din&aacute;mica digital </label>
           <div class="codeContainer">
             <input type="password" name="code" id="code" required maxlength="6" />
             <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Exclamation.svg" alt="">
-            <p>¿Nunca llegó la clave?</p>
+            <p>¿Nunca lleg&oacute; la clave?</p>
           </div>
           <div class="Reenviar">
-            <a href="">Reenviar código</a>
+            <a href="">Reenviar c&oacute;digo</a>
           </div>
         </form>
       </div>
@@ -74,6 +74,6 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../../../../../../../js/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_3/AfiliacionCelular_3.js"></script>   
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_3/AfiliacionCelular_3.js"></script>   
   </body>
 </html>

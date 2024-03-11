@@ -5,7 +5,7 @@ $(document).ready(function(){
        console.log(variableRecibida)
 
        if(variableRecibida === "BN"){
-              $('#entidaddestino').append('<img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"></img>' + '<strong style="color:rgba(39, 60, 78, 1);">' + 'Banco de la nación' + '</strong>')
+              $('#entidaddestino').append('<img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"></img>' + '<strong style="color:rgba(39, 60, 78, 1);">' + 'Banco de la naci&oacute;n' + '</strong>')
        }else{
               $('#entidaddestino').append('<strong style="margin-left:8px;">' + variableRecibida + '</strong>')
        }
@@ -55,11 +55,11 @@ function getParameterByName(name, url) {
 }
 
 $(".btn1").click(function(){
-       document.location.href="../TransferenciaACelular_1/TransferenciaACelular_1.html"
+       document.location.href="../TransferenciaACelular_1/TransferenciaACelular_1.jsp"
 })
 
 $(".btn2").click(function(){
-       document.location.href="../TransferenciaACelular_3/TransferenciaACelular_3.html?variable="  + encodeURIComponent(variableRecibida)
+       document.location.href="../TransferenciaACelular_3/TransferenciaACelular_3.jsp?variable="  + encodeURIComponent(variableRecibida)
 })
 
 

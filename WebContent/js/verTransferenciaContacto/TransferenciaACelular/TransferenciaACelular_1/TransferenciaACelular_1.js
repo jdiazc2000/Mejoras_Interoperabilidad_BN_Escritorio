@@ -211,12 +211,12 @@ $('input[type="checkbox"]').change(function () {
 });
 
 $(".btn1").click(function () {
-  document.location.href="../TransferenciaACelular_0/TransferenciaACelular_0.html";
+  document.location.href="../TransferenciaACelular_0/TransferenciaACelular_0.jsp";
 });
 
 $(".btn2").click(function () {
   document.location.href =
-    "../TransferenciaACelular_2/TransferenciaACelular_2.html?variable=" +
+    "../TransferenciaACelular_2/TransferenciaACelular_2.jsp?variable=" +
     encodeURIComponent(checkboxValueAEnviar);
 });
 
@@ -306,7 +306,7 @@ function aparecerBN() {
           <label class="container checkboxlabel">
             <input type="checkbox" class="black" name="ritem" id="BN" value="BN" data-target="BN">
             <img class="checkbox-image" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
-            <label class="BnLabel"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg" alt=""> Banco de la Nación</label>
+            <label class="BnLabel"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg" alt=""> Banco de la Naci&oacute;n</label>
           </label>
         </div>
       </div>
@@ -320,7 +320,7 @@ function aparecerBN() {
          <label class="container checkboxlabel">
            <input type="checkbox" class="black" name="ritem" id="BN" value="BN" data-target="BN">
            <img class="checkbox-image" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
-           <label class="BnLabel"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg" alt=""> Banco de la Nación</label>
+           <label class="BnLabel"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg" alt=""> Banco de la Naci&oacute;n</label>
          </label>
        </div>
      </div>

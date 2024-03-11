@@ -20,10 +20,10 @@ $(document).ready(function(){
            </tr>
            <tr>
              <td class="right"></td>
-             <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Nación</td>
+             <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
            </tr>
            <tr>
-             <td class="right">Nro. operación:</td>
+             <td class="right">Nro. operaci&oacute;n:</td>
              <td class="left">01281</td>
            </tr>  
            <tr>
@@ -38,10 +38,10 @@ $(document).ready(function(){
         `)
         
         $("#maindiv").css("width","440px");
-        $("#HeaderSubTitle").text('La afiliación fue realizada con éxito.')
-        $("#Title").text('Número de celular');
+        $("#HeaderSubTitle").text('La afiliaci&oacute;n fue realizada con &eacute;xito.')
+        $("#Title").text('N&uacute;mero de celular');
         $("#Number").text(variableRecibida);
-        $(".thanks p").html("<strong>Recuerda que:</strong> Ahora recibirás las transferencias de otros bancos a través de tu nuevo número de celular.");
+        $(".thanks p").html("<strong>Recuerda que:</strong> Ahora recibir&aacute;s las transferencias de otros bancos a trav&eacute;s de tu nuevo n&uacute;mero de celular.");
 
 
         
@@ -66,7 +66,7 @@ $(document).ready(function(){
           </tr>
           <tr>
             <td class="right"></td>
-            <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Nación</td>
+            <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
           </tr>
           <tr>
             <td class="right">Fecha:</td>
@@ -80,9 +80,9 @@ $(document).ready(function(){
        `)
        
        $("#maindiv").css("width","640px");
-       $("#HeaderSubTitle").text('La desafiliación fue realizada con éxito.')
-       $("#Title").text('Número de celular');
-       $(".thanks p").html("<strong>Recuerda que:</strong> Ya no podrás recibir transferencias de otros bancos a través de tu número de celular.");
+       $("#HeaderSubTitle").text('La desafiliaci&oacute;n fue realizada con &eacute;xito.')
+       $("#Title").text('N&uacute;mero de celular');
+       $(".thanks p").html("<strong>Recuerda que:</strong> Ya no podr&aacute;s recibir transferencias de otros bancos a trav&eacute;s de tu n&uacute;mero de celular.");
        $(".thanks").css("width","640px");
        $(".Btnscontainer").css("margin-left","auto")
        $(".Btnscontainer").css("margin-right","auto")

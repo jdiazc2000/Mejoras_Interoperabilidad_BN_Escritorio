@@ -51,10 +51,10 @@ function Off(){
 }
 
 $(".btn1").click(function(){
-       document.location.href="../../../index.html"
+       document.location.href="../../../index.jsp"
 })
 
 $(".btn2").click(function(){
-   console.log("Lo lograste :D")
+   //console.log("Lo lograste")
 })
 

@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afiliación Celular</title>
-    <link rel="stylesheet" href="../../../../../../../css/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_1/TransferenciaACelular_1.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_1/TransferenciaACelular_1.css">
   </head>
   <body>
     <div id="maindiv">
       <h1>TRANSFIERE A</h1>
     <header>
-      <h3>Rosa Gisela García Zevallos</h3>
+      <h3>Rosa Gisela Garc&iacute;a Zevallos</h3>
       <p>980287644</p>
     </header>
 
@@ -63,6 +63,6 @@
     </div>
   </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../../../../../../../js/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_1/TransferenciaACelular_1.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_1/TransferenciaACelular_1.js"></script>
   </body>
 </html>

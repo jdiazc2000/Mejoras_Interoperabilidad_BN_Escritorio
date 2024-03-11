@@ -12,7 +12,7 @@ $('input[name="ritem"]').on('change', function() {
     
        if (valorSeleccionado === "Cambiar") {
           $("#Formulario").append(`    
-             <h1>Ingresa el nuevo número celular</h1>
+             <h1>Ingresa el nuevo n&uacute;mero celular</h1>
              <div class="input-container">
                 <input type="tel" id="numeroCelular" maxlength="9" oninput="validarNumeroCelular()">
                 <span id="checkIcon"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-18.svg" alt=""></span>
@@ -28,11 +28,11 @@ $('input[name="ritem"]').on('change', function() {
 
        } else {
           $("#Formulario").append(`       
-             <h1>Selecciona el motivo de desafiliación</h1>
+             <h1>Selecciona el motivo de desafiliaci&oacute;n</h1>
              <select id="motivo" class="select-css" name="motivo" place onchange="ValidarRazonDesafiliacion()">
                 <option value="" hidden disabled selected>Seleccione un motivo</option>
                 <option value="Cambio">Cambio de celular</option>
-                <option value="Perdida">Pérdida de celular</option>
+                <option value="Perdida">P&eacute;rdida de celular</option>
                 <option value="Robo">Robo</option>
              </select>`);
           
@@ -50,7 +50,7 @@ $('input[name="ritem"]').on('change', function() {
        $("#Alerta").append(`
           <div class="thanks">
              <p>
-                Si tienes algún inconveniente al cambiar tu número celular, contáctate al 0-800-10700.
+                Si tienes alg&uacute;n inconveniente al cambiar tu n&uacute;mero celular, cont&aacute;ctate al 0-800-10700.
              </p>
           </div>`);
     });
@@ -94,13 +94,13 @@ function Off(){
 
 
 $(".btn1").click(function(){
-   document.location.href="../../verTransferenciaContacto_main.html"
+   document.location.href="../../verTransferenciaContacto_main.jsp"
 })
 
 $(".btn2").click(function(){
    if($('input[name="ritem"]:checked').val() == "Desafiliarme"){
-      document.location.href="../DatosAfiliados_2/DatosAfiliados_2.html"
+      document.location.href="../DatosAfiliados_2/DatosAfiliados_2.jsp"
    }else{
-      document.location.href="../DatosAfiliados_1/DatosAfiliados_1.html?variable=" +encodeURIComponent($('#numeroCelular').val());
+      document.location.href="../DatosAfiliados_1/DatosAfiliados_1.jsp?variable=" +encodeURIComponent($('#numeroCelular').val());
    }
 })

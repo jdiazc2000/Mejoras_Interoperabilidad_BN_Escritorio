@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afiliación Celular</title>
-    <link rel="stylesheet" href="../../../../../../../css/verTransferenciaContacto/DatosAfiliados/DatosAfiliados_0/DatosAfiliados_0.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/DatosAfiliados/DatosAfiliados_0/DatosAfiliados_0.css">
   </head>
   <body>
     <div id="maindiv">
@@ -25,14 +25,14 @@
 
     <div class="operationcontainer">
         <div class="PreguntaAccion">
-          <p >¿Qué deseas realizar?</p>
+          <p >¿Qu&eacute; deseas realizar?</p>
        </div>
       <div class="checkboxesContainer">
         <div class="radio-item">
           <input type="radio" id="Cambiar" name="ritem" value="Cambiar" />
           <label for="Cambiar"></label>
           <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-16.svg">
-          <p>Cambiar número<br>de celular</p>
+          <p>Cambiar n&uacute;mero<br>de celular</p>
         </div>
 
         <div class="radio-item">
@@ -66,6 +66,6 @@
 
   
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../../../../../../../js/verTransferenciaContacto/DatosAfiliados/DatosAfiliados_0/DatosAfiliados_0.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/verTransferenciaContacto/DatosAfiliados/DatosAfiliados_0/DatosAfiliados_0.js"></script>
   </body>
 </html>

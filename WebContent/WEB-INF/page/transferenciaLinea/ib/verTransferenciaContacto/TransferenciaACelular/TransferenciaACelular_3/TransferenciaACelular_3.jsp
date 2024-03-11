@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afiliación Celular</title>
-    <link rel="stylesheet" href="../../../../../../../css/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_3/TransferenciaACelular_3.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_3/TransferenciaACelular_3.css">
   </head>
   <body>
     <div id="maindiv">
       <div class="header">
       <img class="OkLogo" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckLogo.svg" alt="">
       <h1>¡Gracias, Rosa!</h1>
-      <p>La afiliación fue realizada con éxito.</p>
+      <p>La operaci&oacute;n fue realizada con &eacute;xito.</p>
     </div>
 
       <div id="container">
@@ -36,10 +36,10 @@
           </tr>
           <tr>
             <td class="right"></td>
-            <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Nación</td>
+            <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
           </tr>
           <tr>
-            <td class="right">Comisión:</td>
+            <td class="right">Comisi&oacute;n:</td>
             <td class="left">Gratis</td>
           </tr>
           <tr>
@@ -64,7 +64,7 @@
       <div class="thanks">
         <div class="checkbox">
           <label class="container checkboxlabel">
-            <strong>Guardar operación frecuente</strong>
+            <strong>Guardar operaci&oacute;n frecuente</strong>
             <input type="checkbox" class="black" id="checkbox">
             <span class="checkmark"></span>
           </label>
@@ -78,6 +78,6 @@
       </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../../../../../../../js/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_3/TransferenciaACelular_3.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_3/TransferenciaACelular_3.js"></script>
   </body>
 </html>

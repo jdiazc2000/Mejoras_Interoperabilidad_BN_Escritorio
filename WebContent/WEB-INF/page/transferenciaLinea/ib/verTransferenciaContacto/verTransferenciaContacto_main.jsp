@@ -10,7 +10,7 @@
     <div id="maindiv">
       <div id="AfiliacionBanner">
         <h1>Afilia un celular para recibir dinero.</h1>
-        <img src="../../../../../imagenes/verTransferenciaContacto/Imgs/Celular.jpg" alt="" />
+        <img src="../../../../../imagenes/verTransferenciaContacto/Imgs/Celular.png" alt="" />
         <button id="AfiliarBtn">Hazlo aqui</button>
       </div>
       <div id="TransferenciaBanner">
@@ -22,6 +22,6 @@
       <button id="DatosAfiliadosBtn">Datos afiliados</button>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../../../../../js/verTransferenciaContacto/verTransferenciaContacto_main.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/verTransferenciaContacto/verTransferenciaContacto_main.js"></script>
   </body>
 </html>

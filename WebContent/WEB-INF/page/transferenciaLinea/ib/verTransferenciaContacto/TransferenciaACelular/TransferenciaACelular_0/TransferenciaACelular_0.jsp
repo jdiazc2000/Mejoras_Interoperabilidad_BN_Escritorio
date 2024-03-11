@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afiliación Celular</title>
-    <link rel="stylesheet" href="../../../../../../../css/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_0/TransferenciaACelular_0.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_0/TransferenciaACelular_0.css">
   </head>
   <body>
     <div id="maindiv">
@@ -26,10 +26,10 @@
       </div>
 
       <div class="operationcontainer">
-        <p class="label">2. Tipo de operación</p>
+        <p class="label">2. Tipo de operaci&oacute;n</p>
         <p class="Description">
-          Elige “Frecuentes”; si ya tienes el número registrado como operación
-          frecuente; o “Nuevo” si aún no lo tienes registrado.
+          Elige “Frecuentes”; si ya tienes el n&uacute;mero registrado como operaci&oacute;n
+          frecuente; o “Nuevo” si a&uacute;n no lo tienes registrado.
         </p>
 
       <div class="checkboxesContainer">
@@ -69,6 +69,6 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../../../../../../../js/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_0/TransferenciaACelular_0.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_0/TransferenciaACelular_0.js"></script>
   </body>
 </html>

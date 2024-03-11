@@ -8,7 +8,7 @@ $(document).ready(function(){
               $('#table').append(
                `<table>
                <tr>
-               <td class="right">Número anterior:</td>
+               <td class="right">N&uacute;mero anterior:</td>
                <td class="left" style="color: rgba(39, 60, 78, 1);">947 058 652</td>
              </tr>
              <tr>
@@ -21,7 +21,7 @@ $(document).ready(function(){
              </tr>
              <tr>
                <td class="right"></td>
-               <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Nación</td>
+               <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
              </tr>
              <tr>
                <td class="right">Fecha:</td>
@@ -50,7 +50,7 @@ $(document).ready(function(){
           </tr>
           <tr>
             <td class="right"></td>
-            <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Nación</td>
+            <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
           </tr>
           <tr>
             <td class="right">Fecha:</td>
@@ -86,11 +86,11 @@ function Off(){
 
 
 $(".btn1").click(function(){
-  document.location.href="../DatosAfiliados_0/DatosAfiliados_0.html"
+  document.location.href="../DatosAfiliados_0/DatosAfiliados_0.jsp"
 })
 
 $(".btn2").click(function(){
-   document.location.href="../DatosAfiliados_3/DatosAfiliados_3.html?variable=" + encodeURIComponent(variableRecibida);
+   document.location.href="../DatosAfiliados_3/DatosAfiliados_3.jsp?variable=" + encodeURIComponent(variableRecibida);
 })
 
 function getParameterByName(name, url) {

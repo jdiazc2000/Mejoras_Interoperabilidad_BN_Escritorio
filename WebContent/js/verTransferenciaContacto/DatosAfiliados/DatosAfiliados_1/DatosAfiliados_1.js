@@ -19,7 +19,7 @@ function getParameterByName(name, url) {
 
 $("#code").on("input", function() {
        if($("#code").val().length == 6){
-              document.location.href="../DatosAfiliados_2/DatosAfiliados_2.html?variable=" + encodeURIComponent(variableRecibida);
+              document.location.href="../DatosAfiliados_2/DatosAfiliados_2.jsp?variable=" + encodeURIComponent(variableRecibida);
        }   
 });
 

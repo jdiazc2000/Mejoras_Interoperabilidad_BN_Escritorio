@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afiliación Celular</title>
-    <link rel="stylesheet" href="../../../../../../../css/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_4/AfiliacionCelular_4.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_4/AfiliacionCelular_4.css">
   </head>
   <body>
     <div id="maindiv">
       <div class="header">
       <img class="OkLogo" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckLogo.svg" alt="">
       <h1>¡Gracias, Rosa!</h1>
-      <p>La afiliación fue realizada con éxito.</p>
+      <p>La afiliaci&oacute;n fue realizada con &eacute;xito.</p>
     </div>
 
       <div id="container">
-        <h2>Número de celular</h2>
+        <h2>N&uacute;mero de celular</h2>
         <p>947 058 652</p>
 
         <table>
@@ -29,10 +29,10 @@
           </tr>
           <tr>
             <td class="right"></td>
-            <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Nación</td>
+            <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
           </tr>
           <tr>
-            <td class="right">Nro. operación:</td>
+            <td class="right">Nro. operaci&oacute;n:</td>
             <td class="left">01281</td>
           </tr>
           <tr>
@@ -48,7 +48,7 @@
 
       <div class="thanks">
         <p>
-          Gracias por afiliarte, ahora podrás realizar tus operaciones con el número de tu celular.
+          Gracias por afiliarte, ahora podr&aacute;s realizar tus operaciones con el n&uacute;mero de tu celular.
         </p>
       </div>
 
@@ -59,6 +59,6 @@
       </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../../../../../../../js/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_4/AfiliacionCelular_4.js"></script>   
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_4/AfiliacionCelular_4.js"></script>   
   </body>
 </html>
