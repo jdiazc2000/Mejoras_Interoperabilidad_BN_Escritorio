@@ -21,8 +21,7 @@ $(document).ready(function () {
     $("#nextBtn").css("display","block");
   } else if (variableRecibida == "Banco") {
     aparecerBN();
-    
-  } else if (variableRecibida == "Simu"){
+  } else if (variableRecibida == "Plin"){
     SOLOPLINSIMULACION();
   }
   else{
@@ -31,6 +30,8 @@ $(document).ready(function () {
     aparecerYAPE();
     aparecerCAJAAREQUIPA();
     aparecerBANCOPICHINCHA();
+    $("#backBtn").css("display","block");
+    $("#nextBtn").css("display","block");
   }
 
   let numberOfSpans = $("#EntidadSPAN span").length + $("#EntidadSPAN2 span").length ;
