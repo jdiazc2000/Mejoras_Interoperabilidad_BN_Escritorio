@@ -20,7 +20,7 @@ $(document).ready(function(){
            </tr>
            <tr>
              <td class="right"></td>
-             <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
+             <td class="left"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
            </tr>
            <tr>
              <td class="right">Nro. operaci&oacute;n:</td>
@@ -66,7 +66,7 @@ $(document).ready(function(){
           </tr>
           <tr>
             <td class="right"></td>
-            <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
+            <td class="left"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
           </tr>
           <tr>
             <td class="right">Fecha:</td>

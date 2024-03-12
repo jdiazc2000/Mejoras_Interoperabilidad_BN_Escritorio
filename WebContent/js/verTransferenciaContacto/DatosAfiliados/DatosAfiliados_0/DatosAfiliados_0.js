@@ -15,7 +15,7 @@ $('input[name="ritem"]').on('change', function() {
              <h1>Ingresa el nuevo n&uacute;mero celular</h1>
              <div class="input-container">
                 <input type="tel" id="numeroCelular" maxlength="9" oninput="validarNumeroCelular()">
-                <span id="checkIcon"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-18.svg" alt=""></span>
+                <span id="checkIcon"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-18.svg" alt=""></span>
              </div>`
           );
     
@@ -74,7 +74,7 @@ function ValidarRazonDesafiliacion(){
 }
 
 function On(){
-   $(".btn2").html("CONTINUAR"+"<img src=" + "../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector.svg" + ">")
+   $(".btn2").html("CONTINUAR"+"<img src=" + "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector.svg" + ">")
    $(".btn2").prop("disabled",false)
    $(".btn2").css({"color": "rgba(255, 255, 255, 1)"})
    $(".btn2").css({"background-color": "rgba(197, 20, 22, 1)"})
@@ -83,7 +83,7 @@ function On(){
 }
 
 function Off(){
-   $(".btn2").html("CONTINUAR"+"<img src=" + "../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" + ">")
+   $(".btn2").html("CONTINUAR"+"<img src=" + "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" + ">")
    $(".btn2").prop("disabled",true)
    $(".btn2").css({"color": "rgba(79, 79, 79, 1)"})
    $(".btn2").css({"background-color": "rgba(215, 215, 215, 1)"})

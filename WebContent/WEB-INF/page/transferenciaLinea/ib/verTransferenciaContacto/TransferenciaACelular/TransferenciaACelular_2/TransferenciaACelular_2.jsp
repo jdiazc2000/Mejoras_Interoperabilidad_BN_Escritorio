@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <title>Afiliación Celular</title>
-    <link rel="stylesheet" type="text/css" href="../../../../../../../css/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_2/TransferenciaACelular_2.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_2/TransferenciaACelular_2.css">
   </head>
   <body>
     <div id="maindiv">
-      <h1>RESUMEN DE TRANSFERENCIA</h1>
+      <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;">RESUMEN DE TRANSFERENCIA</h1>
 
       <p class="label">
         ¿Est&aacute;s seguro que deseas realizar la transferencia al celular?
@@ -54,7 +54,7 @@
               required
               maxlength="6"
             />
-            <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Exclamation.svg" alt="" />
+            <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Exclamation.svg" alt="" />
             <p>¿Nunca lleg&oacute; la clave?</p>
           </div>
           <div class="Reenviar">
@@ -65,15 +65,15 @@
 
       <div id="btndiv">
         <button class="btn1">
-          <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
+          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
         </button>
         <button class="btn2" disabled>
-          CONTINUAR<img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" />
+          CONTINUAR<img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" />
         </button>
       </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="../../../../../../../js/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_2/TransferenciaACelular_2.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_2/TransferenciaACelular_2.js"></script>
   </body>
 </html>

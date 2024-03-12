@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <title>Afiliación Celular</title>
-    <link rel="stylesheet" type="text/css" href="../../../../../../../css/verTransferenciaContacto/DatosAfiliados/DatosAfiliados_2/DatosAfiliados_2.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/DatosAfiliados/DatosAfiliados_2/DatosAfiliados_2.css">
   </head>
   <body>
     <div id="maindiv">
       <div class="header">
-      <h1>¿Est&aacute;s seguro que deseas cambiar tu n&uacute;mero de celular?</h1>
+      <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;">¿Est&aacute;s seguro que deseas cambiar tu n&uacute;mero de celular?</h1>
       <p><strong>Recuerda:</strong> Al cambiar tu n&uacute;mero celular, las nuevas transferencias que te env&iacute;en ser&aacute;n al nuevo n&uacute;mero celular que est&aacute;s registrando.</p>
     </div>
 
@@ -28,14 +28,14 @@
       
       <div id="btndiv">
         <button class="btn1">
-          <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
+          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
         </button>
         <button class="btn2">
-          SI, CAMBIAR <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector.svg" />
+          SI, CAMBIAR <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector.svg" />
         </button>
       </div>
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="../../../../../../../js/verTransferenciaContacto/DatosAfiliados/DatosAfiliados_2/DatosAfiliados_2.js"></script>   
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/verTransferenciaContacto/DatosAfiliados/DatosAfiliados_2/DatosAfiliados_2.js"></script>   
   </body>
 </html>

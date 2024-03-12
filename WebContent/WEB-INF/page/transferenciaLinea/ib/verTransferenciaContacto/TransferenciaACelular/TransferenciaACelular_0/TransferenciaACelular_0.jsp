@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="maindiv">
-      <h1>TRANSFIERE A CELULAR</h1>
+      <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;">TRANSFIERE A CELULAR</h1>
 
       <div class="container">
         <p class="label">1. Cuenta origen</p>

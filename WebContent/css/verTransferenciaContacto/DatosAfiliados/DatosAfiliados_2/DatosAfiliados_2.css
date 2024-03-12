@@ -8,6 +8,12 @@
   src: url(../../../../imagenes/verTransferenciaContacto/Fonts/daxcompact-medium.ttf);
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/Roboto.ttf);
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -16,8 +22,7 @@
 body {
   display: grid;
   text-align: center;
-  justify-items: center;
-  height: 100vh;
+  justify-items: center;  
 }
 
 #maindiv {

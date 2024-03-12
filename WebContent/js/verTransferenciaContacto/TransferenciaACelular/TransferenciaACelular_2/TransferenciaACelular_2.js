@@ -5,7 +5,7 @@ $(document).ready(function(){
        console.log(variableRecibida)
 
        if(variableRecibida === "BN"){
-              $('#entidaddestino').append('<img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"></img>' + '<strong style="color:rgba(39, 60, 78, 1);">' + 'Banco de la naci&oacute;n' + '</strong>')
+              $('#entidaddestino').append('<img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"></img>' + '<strong style="color:rgba(39, 60, 78, 1);">' + 'Banco de la naci&oacute;n' + '</strong>')
        }else{
               $('#entidaddestino').append('<strong style="margin-left:8px;">' + variableRecibida + '</strong>')
        }
@@ -27,7 +27,7 @@ $("#code").on("input", function() {
 });
 
 function On(){
-       $(".btn2").html("CONTINUAR"+"<img src=" + "../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector.svg" + ">")
+       $(".btn2").html("CONTINUAR"+"<img src=" + "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector.svg" + ">")
        $(".btn2").prop("disabled",false)
        $(".btn2").css({"color": "rgba(255, 255, 255, 1)"})
        $(".btn2").css({"background-color": "rgba(197, 20, 22, 1)"})
@@ -36,7 +36,7 @@ function On(){
 }
 
 function Off(){
-       $(".btn2").html("CONTINUAR"+"<img src=" + "../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" + ">")
+       $(".btn2").html("CONTINUAR"+"<img src=" + "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" + ">")
        $(".btn2").prop("disabled",true)
        $(".btn2").css({"color": "rgba(79, 79, 79, 1)"})
        $(".btn2").css({"background-color": "rgba(215, 215, 215, 1)"})

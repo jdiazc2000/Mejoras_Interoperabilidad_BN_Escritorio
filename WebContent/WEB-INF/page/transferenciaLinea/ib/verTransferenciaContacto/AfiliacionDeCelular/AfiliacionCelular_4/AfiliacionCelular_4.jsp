@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <title>Afiliación Celular</title>
-    <link rel="stylesheet" type="text/css" href="../../../../../../../css/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_4/AfiliacionCelular_4.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_4/AfiliacionCelular_4.css">
   </head>
   <body>
     <div id="maindiv">
       <div class="header">
-      <img class="OkLogo" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckLogo.svg" alt="">
-      <h1>¡Gracias, Rosa!</h1>
+      <img class="OkLogo" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckLogo.svg" alt="">
+      <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;">&#xA1;Gracias, Rosa!</h1>
       <p>La afiliaci&oacute;n fue realizada con &eacute;xito.</p>
     </div>
 
@@ -30,7 +30,7 @@
           </tr>
           <tr>
             <td class="right"></td>
-            <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
+            <td class="left"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
           </tr>
           <tr>
             <td class="right">Nro. operaci&oacute;n:</td>
@@ -54,12 +54,12 @@
       </div>
 
       <div class="btns">
-        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-4.svg" alt="">IMPRIMIR</button>
-        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-3.svg" alt="">ENVIAR</button>
-        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-5.svg" alt="">DESCARGAR</button>
+        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-4.svg" alt="">IMPRIMIR</button>
+        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-3.svg" alt="">ENVIAR</button>
+        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-5.svg" alt="">DESCARGAR</button>
       </div>
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="../../../../../../../js/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_4/AfiliacionCelular_4.js"></script>   
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_4/AfiliacionCelular_4.js"></script>   
   </body>
 </html>

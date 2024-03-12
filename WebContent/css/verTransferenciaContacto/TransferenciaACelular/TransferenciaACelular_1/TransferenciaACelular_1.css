@@ -8,6 +8,12 @@
   src: url(../../../../imagenes/verTransferenciaContacto/Fonts/daxcompact-medium.ttf);
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/Roboto.ttf);
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -370,7 +376,6 @@ input[type="number"]::-webkit-outer-spin-button {
   cursor: pointer;
   margin: 0px;
   margin-bottom: 130px;
-  display: none;
 }
 
 .gallery .EntidadSquare {

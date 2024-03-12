@@ -8,6 +8,16 @@
   src: url(../../../../imagenes/verTransferenciaContacto/Fonts/daxcompact-medium.ttf);
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/Roboto.ttf);
+}
+
+th, td {
+  padding-bottom: 8px;
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -165,9 +175,6 @@ button {
   text-align: center;
 }
 
-th, td {
-  padding-bottom: 8px;
-}
 
 .checkbox {
   text-align: justify;

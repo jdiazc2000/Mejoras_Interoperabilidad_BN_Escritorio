@@ -8,6 +8,11 @@
   src: url(../../../../imagenes/verTransferenciaContacto/Fonts/daxcompact-medium.ttf);
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/Roboto.ttf);
+}
+
 
 * {
   padding: 0;
@@ -130,7 +135,6 @@ button.btn2 {
   font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
-  line-height: 16.41px;
   margin-left: 20px;
   border-radius: 4px;
   border: none;

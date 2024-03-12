@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <title>Afiliación Celular</title>
-    <link rel="stylesheet" type="text/css" href="../../../../../../../css/verTransferenciaContacto/DatosAfiliados/DatosAfiliados_0/DatosAfiliados_0.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/DatosAfiliados/DatosAfiliados_0/DatosAfiliados_0.css">
   </head>
   <body>
     <div id="maindiv">
-      <h1>Datos afiliados</h1>
+      <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;">Datos afiliados</h1>
 
       <div class="container">
         <p class="label">1. Celular a afiliar</p>
@@ -32,14 +32,14 @@
         <div class="radio-item">
           <input type="radio" id="Cambiar" name="ritem" value="Cambiar" />
           <label for="Cambiar"></label>
-          <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-16.svg">
+          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-16.svg">
           <p>Cambiar n&uacute;mero<br>de celular</p>
         </div>
 
         <div class="radio-item">
           <input type="radio" id="Desafiliarme" name="ritem" value="Desafiliarme" />
           <label for="Desafiliarme"></label>
-          <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-17.svg">
+          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-17.svg">
           <p>Desafiliarme del<br>servicio</p>
         </div>
     </div>
@@ -56,17 +56,15 @@
 
       <div id="btndiv">
         <button class="btn1">
-          <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
+          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
         </button>
         <button class="btn2">
-          CONTINUAR <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" />
+          CONTINUAR <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" />
         </button>
-      </div>
-
-
-
-  
+      </div>  
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="../../../../../../../js/verTransferenciaContacto/DatosAfiliados/DatosAfiliados_0/DatosAfiliados_0.js"></script>
+    <script type="text/javascript">
+      
+    </script>
   </body>
 </html>

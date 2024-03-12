@@ -1,29 +1,16 @@
 @font-face {
   font-family: DaxCompact-Regular;
-  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/daxcompact-regular.ttf);
+  src: url(../../imagenes/verTransferenciaContacto/Fonts/daxcompact-regular.ttf);
 }
 
 @font-face {
   font-family: DaxCompact-Medium;
-  src: url(../../../../imagenes/verTransferenciaContacto/Fonts/daxcompact-medium.ttf);
+  src: url(../../imagenes/verTransferenciaContacto/Fonts/daxcompact-medium.ttf);
 }
 
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  display: grid;
-  text-align: center;
-  justify-items: center;
-  height: 100vh;
-}
-
-#maindiv {
-  display: grid;
-  align-content: start;  
+@font-face {
+  font-family: Roboto;
+  src: url(../../imagenes/verTransferenciaContacto/Fonts/Roboto.ttf);
 }
 
 #AfiliacionBanner {
@@ -42,7 +29,6 @@ body {
 }
 
 #AfiliacionBanner h1 {
-  font-family: Roboto;
   font-size: 18px;
   font-weight: 900;
   line-height: 21px;

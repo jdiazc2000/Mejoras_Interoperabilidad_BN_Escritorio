@@ -3,7 +3,7 @@ $(document).ready(function(){
        console.log(variableRecibida)
 
        if(variableRecibida === "BN"){
-              $('#Entidad').append('<img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"></img>' + '<strong style="color:rgba(39, 60, 78, 1);">' + 'Banco de la naci&oacute;n' + '</strong>')
+              $('#Entidad').append('<img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"></img>' + '<strong style="color:rgba(39, 60, 78, 1);">' + 'Banco de la naci&oacute;n' + '</strong>')
        }else{
               $('#Entidad').append('<strong>' + variableRecibida + '</strong>')
        }

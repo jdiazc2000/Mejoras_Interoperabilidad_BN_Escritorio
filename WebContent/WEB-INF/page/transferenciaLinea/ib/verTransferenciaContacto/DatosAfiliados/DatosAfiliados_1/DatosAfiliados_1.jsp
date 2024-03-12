@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <title>Afiliación Celular</title>
-    <<link rel="stylesheet" type="text/css" href="../../../../../../../css/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_2/AfiliacionCelular_2.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/AfiliacionDeCelular/AfiliacionCelular_2/AfiliacionCelular_2.css">
 </head>
 <body>
     <div id="maindiv">
-        <h1>Confirma el cambio de tu n&uacute;mero celular</h1>
+        <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;">Confirma el cambio de tu n&uacute;mero celular</h1>
         
         <div class="container">
             <p>Para continuar con el proceso de afiliaci&oacute;n te hemos enviado un c&oacute;digo de verificaci&oacute;n SMS al nuevo n&uacute;mero celular.</p>
@@ -30,6 +30,6 @@
 
 
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>   
-<script type="text/javascript" src="../../../../../../../js/verTransferenciaContacto/DatosAfiliados/DatosAfiliados_1/DatosAfiliados_1.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/verTransferenciaContacto/DatosAfiliados/DatosAfiliados_1/DatosAfiliados_1.js"></script>
 </body>
 </html>

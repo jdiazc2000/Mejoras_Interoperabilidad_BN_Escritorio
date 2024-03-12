@@ -39,7 +39,7 @@ $('input[type="radio"]').change(function() {
 });
 
 function On(){
-    $(".btn2").html("CONTINUAR"+"<img src=" + "../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector.svg" + ">")
+    $(".btn2").html("CONTINUAR" + '<img src="/BNWeb/imagenes/verTransferenciaContacto/Svgs/Vector.svg">');
     $(".btn2").prop("disabled",false)
     $(".btn2").css({"color": "rgba(255, 255, 255, 1)"})
     $(".btn2").css({"background-color": "rgba(197, 20, 22, 1)"})
@@ -48,7 +48,7 @@ function On(){
 }
 
 function Off(){
-    $(".btn2").html("CONTINUAR"+"<img src=" + "../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" + ">")
+    $(".btn2").html("CONTINUAR" + '<img src="/BNWeb/imagenes/verTransferenciaContacto/Svgs/Vector-1.svg">');
     $(".btn2").prop("disabled",true)
     $(".btn2").css({"color": "rgba(79, 79, 79, 1)"})
     $(".btn2").css({"background-color": "rgba(215, 215, 215, 1)"})
