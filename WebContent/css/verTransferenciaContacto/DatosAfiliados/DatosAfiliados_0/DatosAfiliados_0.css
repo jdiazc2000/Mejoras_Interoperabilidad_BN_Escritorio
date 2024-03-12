@@ -211,8 +211,8 @@ button.btn2 {
 
 .radio-item input[type="radio"]:checked + label:after {
   border-radius: 11px;
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   position: absolute;
   top: 9px;
   left: 10px;
