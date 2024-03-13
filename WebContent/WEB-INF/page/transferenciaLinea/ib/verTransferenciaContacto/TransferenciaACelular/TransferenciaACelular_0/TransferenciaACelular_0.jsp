@@ -51,7 +51,7 @@
         <div class="DestiBene">
             <input maxlength="9" type="text" name="" id="Celular" placeholder="Ingrese el nro. de celular del contacto">
             <div class="AyudaContainer">
-                <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-15.svg" alt="">
+                <img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-15.png" alt="">
                 <a href="">Ayuda</a>
             </div>
         </div>
@@ -60,10 +60,10 @@
 
       <div id="btndiv">
         <button class="btn1">
-          <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
+          <img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-2.png" />REGRESAR
         </button>
         <button class="btn2">
-          CONTINUAR <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" />
+          CONTINUAR <img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-1.png" />
         </button>
       </div>
 

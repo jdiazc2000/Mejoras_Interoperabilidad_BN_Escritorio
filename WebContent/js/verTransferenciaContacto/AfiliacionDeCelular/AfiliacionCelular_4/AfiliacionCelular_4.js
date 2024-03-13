@@ -33,7 +33,7 @@ $('#checkbox').click(function() {
 });
 
 function On(){
-       $(".btn2").html("QUIERO AFILIARME"+"<img src=" + "../../../assets/VECTOR-ICON-MV/Vector.svg" + ">")
+       $(".btn2").html("QUIERO AFILIARME"+"<img src=" + "../../../assets/VECTOR-ICON-MV/Vector.png" + ">")
        $(".btn2").prop("disabled",false)
        $(".btn2").css({"color": "rgba(255, 255, 255, 1)"})
        $(".btn2").css({"background-color": "rgba(197, 20, 22, 1)"})
@@ -42,7 +42,7 @@ function On(){
 }
 
 function Off(){
-       $(".btn2").html("QUIERO AFILIARME"+"<img src=" + "../../../assets/VECTOR-ICON-MV/Vector-1.svg" + ">")
+       $(".btn2").html("QUIERO AFILIARME"+"<img src=" + "../../../assets/VECTOR-ICON-MV/Vector-1.png" + ">")
        $(".btn2").prop("disabled",true)
        $(".btn2").css({"color": "rgba(79, 79, 79, 1)"})
        $(".btn2").css({"background-color": "rgba(215, 215, 215, 1)"})

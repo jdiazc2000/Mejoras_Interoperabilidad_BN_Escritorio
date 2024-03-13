@@ -10,7 +10,7 @@
   <body>
     <div id="maindiv">
       <div class="header">
-      <img class="OkLogo" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckLogo.svg" alt="">
+      <img class="OkLogo" src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/CheckLogo.png" alt="">
       <h1>¡Gracias, Rosa!</h1>
       <p id="HeaderSubTitle"></p>
     </div>
@@ -27,9 +27,9 @@
       
     <div class="Btnscontainer">
       <div class="btns">
-        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-4.svg" alt="">IMPRIMIR</button>
-        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-3.svg" alt="">ENVIAR</button>
-        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-5.svg" alt="">DESCARGAR</button>
+        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-4.png" alt="">IMPRIMIR</button>
+        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-3.png" alt="">ENVIAR</button>
+        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-5.png" alt="">DESCARGAR</button>
       </div>
     </div>
 

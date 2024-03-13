@@ -10,7 +10,7 @@
   <body>
     <div id="maindiv">
       <div class="header">
-      <img class="OkLogo" src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/CheckLogo.svg" alt="">
+      <img class="OkLogo" src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/CheckLogo.png" alt="">
       <h1>¡Gracias, Rosa!</h1>
       <p>La operaci&oacute;n fue realizada con &eacute;xito.</p>
     </div>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="right"></td>
-            <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
+            <td class="left"><img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/bnlogo.png"> Banco de la Naci&oacute;n</td>
           </tr>
           <tr>
             <td class="right">Comisi&oacute;n:</td>
@@ -73,9 +73,9 @@
       </div>
 
       <div class="btns">
-        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-4.svg" alt="">IMPRIMIR</button>
-        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-3.svg" alt="">ENVIAR</button>
-        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-5.svg" alt="">DESCARGAR</button>
+        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-4.png" alt="">IMPRIMIR</button>
+        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-3.png" alt="">ENVIAR</button>
+        <button><img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-5.png" alt="">DESCARGAR</button>
       </div>
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>

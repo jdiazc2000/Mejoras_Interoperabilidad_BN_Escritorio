@@ -59,7 +59,7 @@
           <label for="code">Clave din&aacute;mica digital </label>
           <div class="codeContainer">
             <input type="password" name="code" id="code" required maxlength="6" />
-            <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Exclamation.svg" alt="">
+            <img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Exclamation.png" alt="">
             <p>¿Nunca lleg&oacute; la clave?</p>
           </div>
           <div class="Reenviar">
@@ -69,8 +69,8 @@
       </div>
 
       <div id="btndiv">
-        <button class="btn1"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-2.svg"> REGRESAR</button>
-        <button class="btn2" disabled>QUIERO AFILIARME <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-1.svg"></button>
+        <button class="btn1"><img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-2.png"> REGRESAR</button>
+        <button class="btn2" disabled>QUIERO AFILIARME <img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-1.png"></button>
       </div>
     </div>
 

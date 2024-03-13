@@ -28,10 +28,10 @@
       
       <div id="btndiv">
         <button class="btn1">
-          <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
+          <img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-2.png" />REGRESAR
         </button>
         <button class="btn2">
-          SI, CAMBIAR <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector.svg" />
+          SI, CAMBIAR <img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector.png" />
         </button>
       </div>
 

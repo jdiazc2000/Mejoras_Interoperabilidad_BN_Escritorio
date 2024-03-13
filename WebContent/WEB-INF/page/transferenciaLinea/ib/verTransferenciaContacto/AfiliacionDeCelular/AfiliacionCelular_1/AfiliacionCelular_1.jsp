@@ -16,7 +16,7 @@
 
             <div class="CelularContainer">
                  <h2>947 058 652</h2>
-                 <button class="Cambiar"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-7.svg">Cambiar</button>
+                 <button class="Cambiar"><img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-7.png">Cambiar</button>
             </div>
 
         </div>
@@ -34,8 +34,8 @@
         </div>
 
         <div id="btndiv">
-            <button class="btn1"><img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-2.svg">REGRESAR</button>
-            <button class="btn2">CONTINUAR <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector.svg"></button>
+            <button class="btn1"><img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-2.png">REGRESAR</button>
+            <button class="btn2">CONTINUAR <img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector.png"></button>
         </div>
     </div>
 

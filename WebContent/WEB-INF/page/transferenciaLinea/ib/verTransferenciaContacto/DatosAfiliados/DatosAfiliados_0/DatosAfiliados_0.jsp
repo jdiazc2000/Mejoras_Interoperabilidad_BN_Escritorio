@@ -32,14 +32,14 @@
         <div class="radio-item">
           <input type="radio" id="Cambiar" name="ritem" value="Cambiar" />
           <label for="Cambiar"></label>
-          <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-16.svg">
+          <img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-16.png">
           <p>Cambiar n&uacute;mero<br>de celular</p>
         </div>
 
         <div class="radio-item">
           <input type="radio" id="Desafiliarme" name="ritem" value="Desafiliarme" />
           <label for="Desafiliarme"></label>
-          <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-17.svg">
+          <img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-17.png">
           <p>Desafiliarme del<br>servicio</p>
         </div>
     </div>
@@ -56,10 +56,10 @@
 
       <div id="btndiv">
         <button class="btn1">
-          <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
+          <img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-2.png" />REGRESAR
         </button>
         <button class="btn2">
-          CONTINUAR <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" />
+          CONTINUAR <img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector-1.png" />
         </button>
       </div>
 

@@ -15,7 +15,7 @@
         <p>Al afiliarte podr&aacute;ás recibir transferencias a tu n&uacute;mero celular. </p>
         <div id="btndiv">
             <button class="btn1">OMITIR</button>
-            <button class="btn2">CONTINUAR <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector.svg"></button>
+            <button class="btn2">CONTINUAR <img src="../../../../../../../imagenes/verTransferenciaContacto/Imgs/Vector.png"></button>
         </div>
     </div>
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>   
