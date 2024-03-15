@@ -32,23 +32,16 @@ $('#checkbox').click(function() {
        }
 });
 
-function On(){
-       $(".btn2").html("QUIERO AFILIARME"+"<img src=" + "../../../assets/VECTOR-ICON-MV/Vector.svg" + ">")
-       $(".btn2").prop("disabled",false)
-       $(".btn2").css({"color": "rgba(255, 255, 255, 1)"})
-       $(".btn2").css({"background-color": "rgba(197, 20, 22, 1)"})
-       $(".btn2").css({"border-color": "rgba(197, 20, 22, 1)"})
-       $(".btn2").css({"cursor": "pointer"})
-}
-
-function Off(){
-       $(".btn2").html("QUIERO AFILIARME"+"<img src=" + "../../../assets/VECTOR-ICON-MV/Vector-1.svg" + ">")
-       $(".btn2").prop("disabled",true)
-       $(".btn2").css({"color": "rgba(79, 79, 79, 1)"})
-       $(".btn2").css({"background-color": "rgba(215, 215, 215, 1)"})
-       $(".btn2").css({"border-color": "rgba(215, 215, 215, 1)"})
-       $(".btn2").css({"cursor": "default"})
-}
+function On() {
+       $(".btn2").html("QUIERO AFILIARME" + '<img src="/BNWeb/imagenes/verTransferenciaContacto/Imgs/Vector.png">');
+       $(".btn2").prop("disabled", false);
+       $(".btn2").css({ color: "rgba(255, 255, 255, 1)", "background-color": "rgba(197, 20, 22, 1)", "border-color": "rgba(197, 20, 22, 1)", cursor: "pointer" });
+     }
+     function Off() {
+       $(".btn2").html("QUIERO AFILIARME" + '<img src="/BNWeb/imagenes/verTransferenciaContacto/Imgs/Vector-1.png">');
+       $(".btn2").prop("disabled", true);
+       $(".btn2").css({ color: "rgba(79, 79, 79, 1)", "background-color": "rgba(215, 215, 215, 1)", "border-color": "rgba(215, 215, 215, 1)", cursor: "default" });
+     }
 
 $(".btn1").click(function(){
        document.location.href="../../../index.html"

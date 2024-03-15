@@ -169,6 +169,7 @@ button.btn2 {
   text-align: left;
   position: relative;
   padding: 0 6px;
+  align-items: center;
 }
 
 .radio-item p {
@@ -203,7 +204,7 @@ button.btn2 {
   content: " ";
   display: inline-block;
   position: relative;
-  top: 5px;
+  top: 2px;
   margin: 0 5px 0 0;
   width: 20px;
   height: 20px;
@@ -219,7 +220,7 @@ button.btn2 {
   width: 16px;
   height: 16px;
   position: absolute;
-  top: 9px;
+  top: 10.5px;
   left: 10px;
   content: " ";
   display: block;
@@ -319,7 +320,7 @@ input {
   appearance: none;
   border: none;
   border-bottom: 1px solid rgba(39, 60, 78, 1);
-  background-image: url(../../../../imagenes/verTransferenciaContacto/Svgs/selectarrow.svg), linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+  background-image: url('<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/selectarrow.png'), linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
   background-repeat: no-repeat, repeat;
   background-position: right .1em top 50%, 0 0;
   background-size: 1em auto, 100%;

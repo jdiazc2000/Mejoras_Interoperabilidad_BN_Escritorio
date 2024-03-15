@@ -9,14 +9,14 @@
 </head>
 <body>
     <div id="maindiv">
-        <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;">Afilia tu Celular</h1>
+    <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;margin-bottom: 19px;">Afilia tu Celular</h1>
         
         <div class="container">
             <p class="label">1. Celular a afiliar</p>
 
             <div class="CelularContainer">
                  <h2>947 058 652</h2>
-                 <button class="Cambiar"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-7.svg">Cambiar</button>
+                 <button class="Cambiar"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-7.png">Cambiar</button>
             </div>
 
         </div>
@@ -34,8 +34,8 @@
         </div>
 
         <div id="btndiv">
-            <button class="btn1"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-2.svg">REGRESAR</button>
-            <button class="btn2">CONTINUAR <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector.svg"></button>
+            <button class="btn1"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-2.png">REGRESAR</button>
+            <button class="btn2">CONTINUAR <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector.png"></button>
         </div>
     </div>
 

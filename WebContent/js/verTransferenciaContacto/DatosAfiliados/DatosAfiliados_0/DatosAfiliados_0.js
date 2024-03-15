@@ -12,10 +12,10 @@ $('input[name="ritem"]').on('change', function() {
     
        if (valorSeleccionado === "Cambiar") {
           $("#Formulario").append(`    
-             <h1>Ingresa el nuevo n&uacute;mero celular</h1>
+             <h1 style="font-family: 'daxcompact-mediumregular';">Ingresa el nuevo n&uacute;mero celular</h1>
              <div class="input-container">
                 <input type="tel" id="numeroCelular" maxlength="9" oninput="validarNumeroCelular()">
-                <span id="checkIcon"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-18.svg" alt=""></span>
+                <span id="checkIcon"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-18.png" alt=""></span>
              </div>`
           );
     
@@ -28,7 +28,7 @@ $('input[name="ritem"]').on('change', function() {
 
        } else {
           $("#Formulario").append(`       
-             <h1>Selecciona el motivo de desafiliaci&oacute;n</h1>
+             <h1 style="font-family: 'daxcompact-mediumregular';" >Selecciona el motivo de desafiliaci&oacute;n</h1>
              <select id="motivo" class="select-css" name="motivo" place onchange="ValidarRazonDesafiliacion()">
                 <option value="" hidden disabled selected>Seleccione un motivo</option>
                 <option value="Cambio">Cambio de celular</option>
@@ -49,7 +49,7 @@ $('input[name="ritem"]').on('change', function() {
     
        $("#Alerta").append(`
           <div class="thanks">
-             <p>
+             <p style="font-family: 'daxcompact-mediumregular';">
                 Si tienes alg&uacute;n inconveniente al cambiar tu n&uacute;mero celular, cont&aacute;ctate al 0-800-10700.
              </p>
           </div>`);
@@ -73,23 +73,17 @@ function ValidarRazonDesafiliacion(){
   } 
 }
 
-function On(){
-   $(".btn2").html("CONTINUAR"+"<img src=" + "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector.svg" + ">")
-   $(".btn2").prop("disabled",false)
-   $(".btn2").css({"color": "rgba(255, 255, 255, 1)"})
-   $(".btn2").css({"background-color": "rgba(197, 20, 22, 1)"})
-   $(".btn2").css({"border-color": "rgba(197, 20, 22, 1)"})
-   $(".btn2").css({"cursor": "pointer"})
-}
-
-function Off(){
-   $(".btn2").html("CONTINUAR"+"<img src=" + "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" + ">")
-   $(".btn2").prop("disabled",true)
-   $(".btn2").css({"color": "rgba(79, 79, 79, 1)"})
-   $(".btn2").css({"background-color": "rgba(215, 215, 215, 1)"})
-   $(".btn2").css({"border-color": "rgba(215, 215, 215, 1)"})
-   $(".btn2").css({"cursor": "default"})
-}
+function On() {
+   $(".btn2").html("CONTINUAR" + '<img src="/BNWeb/imagenes/verTransferenciaContacto/Imgs/Vector.png">');
+   $(".btn2").prop("disabled", false);
+   $(".btn2").css({ color: "rgba(255, 255, 255, 1)", "background-color": "rgba(197, 20, 22, 1)", "border-color": "rgba(197, 20, 22, 1)", cursor: "pointer" });
+ }
+ 
+ function Off() {
+   $(".btn2").html("CONTINUAR" + '<img src="/BNWeb/imagenes/verTransferenciaContacto/Imgs/Vector-1.png">');
+   $(".btn2").prop("disabled", true);
+   $(".btn2").css({ color: "rgba(79, 79, 79, 1)", "background-color": "rgba(215, 215, 215, 1)", "border-color": "rgba(215, 215, 215, 1)", cursor: "default" });
+ }
 
 
 

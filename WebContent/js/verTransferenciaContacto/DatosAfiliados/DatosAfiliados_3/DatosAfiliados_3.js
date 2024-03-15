@@ -10,29 +10,29 @@ $(document).ready(function(){
          <p id="Number"></p>
  
          <table>
-           <tr>
-             <td class="right">Cuenta afiliada:</td>
-             <td class="left">01-1001-000001</td>
+           <tr style="padding-bottom: 8px;">
+             <td style="padding-bottom: 8px;" class="right">Cuenta afiliada:</td>
+             <td style="padding-bottom: 8px;" class="left">01-1001-000001</td>
            </tr>
-           <tr>
-             <td class="right">Tipo de cuenta:</td>
-             <td class="left">Cuenta ahorro soles</td>
+           <tr style="padding-bottom: 8px;">
+             <td style="padding-bottom: 8px;" class="right">Tipo de cuenta:</td>
+             <td style="padding-bottom: 8px;" class="left">Cuenta ahorro soles</td>
            </tr>
-           <tr>
-             <td class="right"></td>
-             <td class="left"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
+           <tr style="padding-bottom: 8px;">
+             <td style="padding-bottom: 8px;" class="right"></td>
+             <td style="padding-bottom: 8px;" class="left"><img src="/BNWeb/imagenes/verTransferenciaContacto/Imgs/bnlogo.png"> Banco de la Naci&oacute;n</td>
            </tr>
-           <tr>
-             <td class="right">Nro. operaci&oacute;n:</td>
-             <td class="left">01281</td>
+           <tr style="padding-bottom: 8px;">
+             <td style="padding-bottom: 8px;" class="right">Nro. operaci&oacute;n:</td>
+             <td style="padding-bottom: 8px;" class="left">01281</td>
            </tr>  
-           <tr>
-             <td class="right">Fecha:</td>
-             <td class="left">19/01/2024</td>
+           <tr style="padding-bottom: 8px;">
+             <td style="padding-bottom: 8px;" class="right">Fecha:</td>
+             <td style="padding-bottom: 8px;" class="left">19/01/2024</td>
            </tr>    
-           <tr>
-             <td class="right">Hora:</td>
-             <td class="left">11:42:10</td>
+           <tr style="padding-bottom: 8px;">
+             <td style="padding-bottom: 8px;" class="right">Hora:</td>
+             <td style="padding-bottom: 8px;" class="left">11:42:10</td>
            </tr>    
          </table>
         `)
@@ -52,29 +52,29 @@ $(document).ready(function(){
         <p id="Number">947 058 652</p>
 
         <table>
-          <tr>
-            <td class="right">Cuenta afiliada:</td>
-            <td class="left">01-1001-000001</td>
+          <tr style="padding-bottom: 8px;" >
+            <td style="padding-bottom: 8px;" class="right">Cuenta afiliada:</td>
+            <td style="padding-bottom: 8px;" class="left">01-1001-000001</td>
           </tr>
-          <tr>
-          <td class="right">CCI de la cuenta afiliada:</td>
-          <td class="left">018 000 001001000001 06</td>
+          <tr style="padding-bottom: 8px;" >
+          <td style="padding-bottom: 8px;" class="right">CCI de la cuenta afiliada:</td>
+          <td style="padding-bottom: 8px;" class="left">018 000 001001000001 06</td>
         </tr>
-          <tr>
-            <td class="right">Tipo de cuenta:</td>
-            <td class="left">Cuenta ahorro soles</td>
+          <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right">Tipo de cuenta:</td>
+            <td style="padding-bottom: 8px;" class="left">Cuenta ahorro soles</td>
           </tr>
-          <tr>
-            <td class="right"></td>
-            <td class="left"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
+          <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right"></td>
+            <td style="padding-bottom: 8px;" class="left"><img src="/BNWeb/imagenes/verTransferenciaContacto/Imgs/bnlogo.png"> Banco de la Naci&oacute;n</td>
           </tr>
-          <tr>
-            <td class="right">Fecha:</td>
-            <td class="left">19/01/2024</td>
+          <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right">Fecha:</td>
+            <td style="padding-bottom: 8px;" class="left">19/01/2024</td>
           </tr>    
-          <tr>
-            <td class="right">Hora:</td>
-            <td class="left">11:42:10</td>
+          <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right">Hora:</td>
+            <td style="padding-bottom: 8px;" class="left">11:42:10</td>
           </tr>    
         </table>
        `)

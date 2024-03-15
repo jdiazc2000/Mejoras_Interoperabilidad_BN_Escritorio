@@ -1,87 +1,81 @@
 let variableRecibida = getParameterByName("variable");
 console.log(variableRecibida)
 
-$(document).ready(function(){
-       if(variableRecibida != "null" && variableRecibida != null){
-              $('#Number').text(variableRecibida)
+// $(document).ready(function(){
+//        if(variableRecibida != "null" && variableRecibida != null){
+//            $(".Number").text('947 058 652')
 
-              $('#table').append(
-               `<table>
-               <tr>
-               <td class="right">N&uacute;mero anterior:</td>
-               <td class="left" style="color: rgba(39, 60, 78, 1);">947 058 652</td>
-             </tr>
-             <tr>
-               <td class="right">Cuenta afiliada:</td>
-               <td class="left">01-1001-000001</td>
-             </tr>
-             <tr>
-               <td class="right">Tipo de cuenta:</td>
-               <td class="left">Cuenta ahorro soles</td>
-             </tr>
-             <tr>
-               <td class="right"></td>
-               <td class="left"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
-             </tr>
-             <tr>
-               <td class="right">Fecha:</td>
-               <td class="left">19/01/2024</td>
-             </tr>    
-             <tr>
-               <td class="right">Hora:</td>
-               <td class="left">11:42:10</td>
-             </tr>  
-             </table>
-              `)
-       }else{
-         $('#table').append(
-            `<table>
-          <tr>
-            <td class="right">Cuenta afiliada:</td>
-            <td class="left">01-1001-000001</td>
-          </tr>
-          <tr>
-          <td class="right">CCI de la cuenta afiliada:</td>
-          <td class="left">018 000 001001000001 06</td>
-         </tr>
-          <tr>
-            <td class="right">Tipo de cuenta:</td>
-            <td class="left">Cuenta ahorro soles</td>
-          </tr>
-          <tr>
-            <td class="right"></td>
-            <td class="left"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
-          </tr>
-          <tr>
-            <td class="right">Fecha:</td>
-            <td class="left">19/01/2024</td>
-          </tr>    
-          <tr>
-            <td class="right">Hora:</td>
-            <td class="left">11:42:10</td>
-          </tr>  
-          </table>
-           `)
-           $(".Number").text('947 058 652')
-       }
-});
+//               $('#table').append(
+//                `<table>
+//                <tr style="padding-bottom: 8px;">
+//                <td style="padding-bottom: 8px;" class="right">N&uacute;mero anterior:</td>
+//                <td style="padding-bottom: 8px;"class="left" style="color: rgba(39, 60, 78, 1);">947 058 652</td>
+//              </tr>
+//              <tr style="padding-bottom: 8px;">
+//                <td style="padding-bottom: 8px;" class="right">Cuenta afiliada:</td>
+//                <td style="padding-bottom: 8px;" class="left">01-1001-000001</td>
+//              </tr>
+//              <tr style="padding-bottom: 8px;">
+//                <td style="padding-bottom: 8px;" class="right">Tipo de cuenta:</td>
+//                <td style="padding-bottom: 8px;" class="left">Cuenta ahorro soles</td>
+//              </tr>
+//              <tr style="padding-bottom: 8px;">
+//                <td style="padding-bottom: 8px;" class="right"></td>
+//                <td style="padding-bottom: 8px;" class="left"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/bnlogo.png"> Banco de la Naci&oacute;n</td>
+//              </tr>
+//              <tr style="padding-bottom: 8px;">
+//                <td style="padding-bottom: 8px;" class="right">Fecha:</td>
+//                <td  style="padding-bottom: 8px;"class="left">19/01/2024</td>
+//              </tr>    
+//              <tr style="padding-bottom: 8px;">
+//                <td style="padding-bottom: 8px;" class="right">Hora:</td>
+//                <td style="padding-bottom: 8px;" class="left">11:42:10</td>
+//              </tr>  
+//              </table>
+//               `)
+//        }else{
+//          $('#table').append(
+//             `<table>
+//           <tr style="padding-bottom: 8px;">
+//             <td style="padding-bottom: 8px;" class="right">Cuenta afiliada:</td>
+//             <td style="padding-bottom: 8px;" class="left">01-1001-000001</td>
+//           </tr>
+//           <tr style="padding-bottom: 8px;">
+//           <td style="padding-bottom: 8px;" class="right">CCI de la cuenta afiliada:</td>
+//           <td style="padding-bottom: 8px;" class="left">018 000 001001000001 06</td>
+//          </tr>
+//           <tr style="padding-bottom: 8px;">
+//             <td style="padding-bottom: 8px;" class="right">Tipo de cuenta:</td>
+//             <td style="padding-bottom: 8px;" class="left">Cuenta ahorro soles</td>
+//           </tr>
+//           <tr style="padding-bottom: 8px;">
+//             <td style="padding-bottom: 8px;" class="right"></td>
+//             <td style="padding-bottom: 8px;" class="left"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/bnlogo.png"> Banco de la Naci&oacute;n</td>
+//           </tr>
+//           <tr style="padding-bottom: 8px;">
+//             <td style="padding-bottom: 8px;" class="right">Fecha:</td>
+//             <td style="padding-bottom: 8px;" class="left">19/01/2024</td>
+//           </tr>    
+//           <tr style="padding-bottom: 8px;">
+//             <td style="padding-bottom: 8px;" class="right">Hora:</td>
+//             <td style="padding-bottom: 8px;" class="left">11:42:10</td>
+//           </tr>  
+//           </table>
+//            `)
+//            $(".Number").text('947 058 652')
+//        }
+// });
 
-function On(){
-   $(".btn2").html("CONTINUAR"+"<img src=" + "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector.svg" + ">")
-   $(".btn2").prop("disabled",false)
-   $(".btn2").css({"color": "rgba(255, 255, 255, 1)"})
-   $(".btn2").css({"background-color": "rgba(197, 20, 22, 1)"})
-   $(".btn2").css({"border-color": "rgba(197, 20, 22, 1)"})
-   $(".btn2").css({"cursor": "pointer"})
+function On() {
+  $(".btn2").html("CONTINUAR" + '<img src="/BNWeb/imagenes/verTransferenciaContacto/Imgs/Vector.png">');
+  $(".btn2").prop("disabled", false);
+  $(".btn2").css({ color: "rgba(255, 255, 255, 1)", "background-color": "rgba(197, 20, 22, 1)", "border-color": "rgba(197, 20, 22, 1)", cursor: "pointer" });
 }
 
-function Off(){
-   $(".btn2").html("CONTINUAR"+"<img src=" + "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" + ">")
-   $(".btn2").prop("disabled",true)
-   $(".btn2").css({"color": "rgba(79, 79, 79, 1)"})
-   $(".btn2").css({"background-color": "rgba(215, 215, 215, 1)"})
-   $(".btn2").css({"border-color": "rgba(215, 215, 215, 1)"})
-   $(".btn2").css({"cursor": "default"})
+function Off() {
+  $(".btn2").html("CONTINUAR" + '<img src="/BNWeb/imagenes/verTransferenciaContacto/Imgs/Vector-1.png">');
+  $(".btn2").prop("disabled", true);
+  $(".btn2").css({ color: "rgba(79, 79, 79, 1)", "background-color": "rgba(215, 215, 215, 1)", "border-color": "rgba(215, 215, 215, 1)", cursor: "default" });
 }
 
 

@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="maindiv">
-      <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;">RESUMEN DE TRANSFERENCIA</h1>
+  <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;margin-bottom: 19px;">RESUMEN DE TRANSFERENCIA</h1>
 
       <p class="label">
         ¿Est&aacute;s seguro que deseas realizar la transferencia al celular?
@@ -45,7 +45,7 @@
 
       <div>
         <form id="CodeValidation" name="CodeValidation">
-          <label for="code">Clave din&aacute;mica digital </label>
+          <label for="code" style="font-family: 'daxcompact-mediumregular';">Clave din&aacute;mica digital </label>
           <div class="codeContainer">
             <input
               type="password"
@@ -54,7 +54,7 @@
               required
               maxlength="6"
             />
-            <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Exclamation.svg" alt="" />
+            <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Exclamation.png" alt="" />
             <p>¿Nunca lleg&oacute; la clave?</p>
           </div>
           <div class="Reenviar">
@@ -65,10 +65,10 @@
 
       <div id="btndiv">
         <button class="btn1">
-          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
+          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-2.png" />REGRESAR
         </button>
         <button class="btn2" disabled>
-          CONTINUAR<img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" />
+          CONTINUAR<img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-1.png" />
         </button>
       </div>
     </div>

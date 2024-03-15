@@ -10,8 +10,8 @@
   <body>
     <div id="maindiv">
       <div class="header">
-      <img class="OkLogo" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckLogo.svg" alt="">
-      <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;">&#xA1;Gracias, Rosa!</h1>
+      <img class="OkLogo" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/CheckLogo.png" alt="">
+  <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;margin-bottom: 19px;">&#xA1;Gracias, Rosa!</h1>
       <p>La afiliaci&oacute;n fue realizada con &eacute;xito.</p>
     </div>
 
@@ -20,43 +20,43 @@
         <p>947 058 652</p>
 
         <table>
-          <tr>
-            <td class="right">Cuenta afiliada:</td>
-            <td class="left">01-1001-000001</td>
+          <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right">Cuenta afiliada:</td>
+            <td style="padding-bottom: 8px;" class="left">01-1001-000001</td>
           </tr>
-          <tr>
-            <td class="right">Tipo de cuenta:</td>
-            <td class="left">Cuenta ahorro soles</td>
+          <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right">Tipo de cuenta:</td>
+            <td style="padding-bottom: 8px;" class="left">Cuenta ahorro soles</td>
           </tr>
-          <tr>
-            <td class="right"></td>
-            <td class="left"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
+          <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right"></td>
+            <td style="padding-bottom: 8px;" class="left"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/bnlogo.png"> Banco de la Naci&oacute;n</td>
           </tr>
-          <tr>
-            <td class="right">Nro. operaci&oacute;n:</td>
-            <td class="left">01281</td>
+          <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right">Nro. operaci&oacute;n:</td>
+            <td style="padding-bottom: 8px;" class="left">01281</td>
           </tr>
-          <tr>
-            <td class="right">Fecha:</td>
-            <td class="left">19/01/2024</td>
+          <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right">Fecha:</td>
+            <td style="padding-bottom: 8px;" class="left">19/01/2024</td>
           </tr>    
-          <tr>
-            <td class="right">Hora:</td>
-            <td class="left">11:42:10</td>
+          <tr style="padding-bottom: 8px;" >
+            <td style="padding-bottom: 8px;" class="right">Hora:</td>
+            <td style="padding-bottom: 8px;" class="left">11:42:10</td>
           </tr>    
         </table>
       </div>
 
       <div class="thanks">
-        <p>
+        <p style="font-family: 'daxcompact-mediumregular';">
           Gracias por afiliarte, ahora podr&aacute;s realizar tus operaciones con el n&uacute;mero de tu celular.
         </p>
       </div>
 
       <div class="btns">
-        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-4.svg" alt="">IMPRIMIR</button>
-        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-3.svg" alt="">ENVIAR</button>
-        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-5.svg" alt="">DESCARGAR</button>
+        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-4.png" alt="">IMPRIMIR</button>
+        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-3.png" alt="">ENVIAR</button>
+        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-5.png" alt="">DESCARGAR</button>
       </div>
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>

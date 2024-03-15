@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="maindiv">
-      <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;">Datos afiliados</h1>
+  <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;margin-bottom: 19px;">Datos afiliados</h1>
 
       <div class="container">
         <p class="label">1. Celular a afiliar</p>
@@ -26,21 +26,21 @@
 
     <div class="operationcontainer">
         <div class="PreguntaAccion">
-          <p >¿Qu&eacute; deseas realizar?</p>
+          <p>¿Qu&eacute; deseas realizar?</p>
        </div>
       <div class="checkboxesContainer">
         <div class="radio-item">
           <input type="radio" id="Cambiar" name="ritem" value="Cambiar" />
           <label for="Cambiar"></label>
-          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-16.svg">
-          <p>Cambiar n&uacute;mero<br>de celular</p>
+          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-16.png">
+          <p style="font-family: 'daxcompact-mediumregular';">Cambiar n&uacute;mero<br>de celular</p>
         </div>
 
         <div class="radio-item">
           <input type="radio" id="Desafiliarme" name="ritem" value="Desafiliarme" />
           <label for="Desafiliarme"></label>
-          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-17.svg">
-          <p>Desafiliarme del<br>servicio</p>
+          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-17.png">
+          <p style="font-family: 'daxcompact-mediumregular';">Desafiliarme del<br>servicio</p>
         </div>
     </div>
 
@@ -56,15 +56,13 @@
 
       <div id="btndiv">
         <button class="btn1">
-          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
+          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-2.png" />REGRESAR
         </button>
         <button class="btn2">
-          CONTINUAR <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" />
+          CONTINUAR <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-1.png" />
         </button>
       </div>  
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript">
-      
-    </script>
+    <script type="text/javascript"  src="<%=request.getContextPath()%>/js/verTransferenciaContacto/DatosAfiliados/DatosAfiliados_0/DatosAfiliados_0.js"></script>
   </body>
 </html>

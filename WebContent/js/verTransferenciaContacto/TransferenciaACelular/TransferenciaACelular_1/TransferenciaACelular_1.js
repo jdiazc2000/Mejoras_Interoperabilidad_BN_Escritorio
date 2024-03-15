@@ -39,10 +39,10 @@ $(document).ready(function () {
 
   if(numberOfSpans <= 4){
     console.log("aa")
-    nextBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-12.svg');
+    nextBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-12.png');
     nextBtn.css('transform', 'rotate(180deg)');
     nextBtn.prop('disabled', true);
-    backBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-12.svg');
+    backBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-12.png');
     backBtn.css('transform', 'rotate(0deg)');
   }
 
@@ -51,15 +51,15 @@ $(document).ready(function () {
       if (itemN > 4) {
         scrollContainer.css("scroll-behavior", "smooth");
         scrollContainer.scrollLeft(scrollContainer.scrollLeft() - 80);
-        backBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-13.svg');
+        backBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-13.png');
         backBtn.css('transform', 'rotate(180deg)');+
         itemN--;
-        nextBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-13.svg');
+        nextBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-13.png');
         nextBtn.css('transform', 'rotate(0deg)');
       } 
 
       if(itemN === 4){
-        backBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-12.svg');
+        backBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-12.png');
         backBtn.css('transform', 'rotate(0deg)');
       }
     } 
@@ -68,7 +68,7 @@ $(document).ready(function () {
   nextBtn.on("click", function () {
     if(numberOfSpans === numberOfSpans){
       if(itemN != 1){
-        backBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-13.svg');
+        backBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-13.png');
         backBtn.css('transform', 'rotate(180deg)');
       }
 
@@ -77,16 +77,16 @@ $(document).ready(function () {
         scrollContainer.scrollLeft(scrollContainer.scrollLeft() + 80);
         itemN++;
       } else {
-        nextBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-12.svg');
+        nextBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-12.png');
         nextBtn.css('transform', 'rotate(180deg)');
       }
 
       //console.log(itemN, numberOfSpans)
       if(itemN === numberOfSpans){
-        nextBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-12.svg');
+        nextBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-12.png');
         nextBtn.css('transform', 'rotate(180deg)');
       }else{
-        backBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-13.svg');
+        backBtn.attr('src', '<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-13.png');
         backBtn.css('transform', 'rotate(180deg)');
       }
 
@@ -105,7 +105,7 @@ $(document).ready(function () {
           .siblings(".checkbox-image")
           .attr(
             "src",
-            "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg"
+            "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/CheckOff.png"
           );
       });
     }
@@ -116,12 +116,12 @@ $(document).ready(function () {
       if ($(this).prop("checked")) {
         checkboxImage.attr(
           "src",
-          "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOn.svg"
+          "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/CheckOn.png"
         );
       } else {
         checkboxImage.attr(
           "src",
-          "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg"
+          "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/CheckOff.png"
         );
       }
     });
@@ -241,32 +241,14 @@ function NextButton() {
 }
 
 function On() {
-  if (checkboxValueAEnviar != "")
-    $(".btn2").html(
-      "CONTINUAR" +
-        "<img src=" +
-        "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector.svg" +
-        ">"
-    );
+  $(".btn2").html("CONTINUAR" + '<img src="/BNWeb/imagenes/verTransferenciaContacto/Imgs/Vector.png">');
   $(".btn2").prop("disabled", false);
-  $(".btn2").css({ color: "rgba(255, 255, 255, 1)" });
-  $(".btn2").css({ "background-color": "rgba(197, 20, 22, 1)" });
-  $(".btn2").css({ "border-color": "rgba(197, 20, 22, 1)" });
-  $(".btn2").css({ cursor: "pointer" });
+  $(".btn2").css({ color: "rgba(255, 255, 255, 1)", "background-color": "rgba(197, 20, 22, 1)", "border-color": "rgba(197, 20, 22, 1)", cursor: "pointer" });
 }
-
 function Off() {
-  $(".btn2").html(
-    "CONTINUAR" +
-      "<img src=" +
-      "<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" +
-      ">"
-  );
+  $(".btn2").html("CONTINUAR" + '<img src="/BNWeb/imagenes/verTransferenciaContacto/Imgs/Vector-1.png">');
   $(".btn2").prop("disabled", true);
-  $(".btn2").css({ color: "rgba(79, 79, 79, 1)" });
-  $(".btn2").css({ "background-color": "rgba(215, 215, 215, 1)" });
-  $(".btn2").css({ "border-color": "rgba(215, 215, 215, 1)" });
-  $(".btn2").css({ cursor: "default" });
+  $(".btn2").css({ color: "rgba(79, 79, 79, 1)", "background-color": "rgba(215, 215, 215, 1)", "border-color": "rgba(215, 215, 215, 1)", cursor: "default" });
 }
 
 function NextButton() {
@@ -319,8 +301,8 @@ function aparecerBN() {
         <div class="checkbox solobn">
           <label class="container checkboxlabel">
             <input type="checkbox" class="black" name="ritem" id="BN" value="BN" data-target="BN">
-            <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
-            <label class="BnLabel"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bnlogo.svg" alt=""> Banco de la Naci&oacute;n</label>
+            <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/CheckOff.png" alt="">
+            <label class="BnLabel"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/bnlogo.png" alt=""> Banco de la Naci&oacute;n</label>
           </label>
         </div>
       </div>
@@ -333,14 +315,14 @@ function aparecerBN() {
        <div class="checkbox">
          <label class="container checkboxlabel">
            <input type="checkbox" class="black" name="ritem" id="BN" value="BN" data-target="BN">
-           <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
-           <label class="BnLabel"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bnlogo.svg" alt=""> Banco de la Naci&oacute;n</label>
+           <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/CheckOff.png" alt="">
+           <label class="BnLabel"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/bnlogo.png" alt=""> Banco de la Naci&oacute;n</label>
          </label>
        </div>
      </div>
    </div>
   <div style="margin-bottom: 26.26px;">
-    <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Line.svg" alt="">
+    <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Line.png" alt="">
   </div>
  `);
   }
@@ -350,10 +332,10 @@ function aparecerPLIN() {
   $("#EntidadSPAN").append(`
   <span>
 <div class="EntidadSquare">
-      <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/plinlogo.svg" alt="">
+      <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/plinlogo.png" alt="">
       <label class="container checkboxlabel">
         <input type="checkbox" class="black" name="ritem" value="Plin" data-target="Plin">
-        <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
+        <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/CheckOff.png" alt="">
       </label>
       <p id="Plin">PLIN</p>
   </div>
@@ -365,10 +347,10 @@ function aparecerYAPE() {
   $("#EntidadSPAN").append(`
   <span>
   <div class="EntidadSquare">
-      <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/yapelogo.svg" alt="">
+      <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/yapelogo.png" alt="">
       <label class="container checkboxlabel">
         <input type="checkbox" class="black" name="ritem" value="Yape" data-target="Yape">
-        <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
+        <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/CheckOff.png" alt="">
       </label>
       <p id="Yape">YAPE</p>
     </div>
@@ -380,10 +362,10 @@ function aparecerCAJAAREQUIPA() {
   $("#EntidadSPAN").append(`
   <span>
 <div class="EntidadSquare">
-    <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/cajaarequipalogo.svg" alt="">
+    <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/cajaarequipalogo.png" alt="">
     <label class="container checkboxlabel">
       <input type="checkbox" class="black" name="ritem" value="Caja Arequipa" data-target="CajaArequipa">
-      <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
+      <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/CheckOff.png" alt="">
     </label>
     <p id="CajaArequipa">CAJA AREQUIPA</p>
   </div>
@@ -395,10 +377,10 @@ function aparecerBANCOPICHINCHA() {
   $("#EntidadSPAN").append(`
   <span>
   <div class="EntidadSquare">
-    <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bancopichinchalogo.svg" alt="">
+    <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/bancopichinchalogo.png" alt="">
     <label class="container checkboxlabel">
       <input type="checkbox" class="black" name="ritem" value="Banco Pichincha" data-target="BancoPichincha">
-      <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
+      <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/CheckOff.png" alt="">
     </label>
     <p id="BancoPichincha">BANCO PICHINCHA</p>
   </div>
@@ -420,10 +402,10 @@ function SOLOPLINSIMULACION() {
   $("#EntidadSPAN").append(`
   <span>
   <div class="EntidadSquare">
-      <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/plinlogo.svg" alt="">
+      <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/plinlogo.png" alt="">
       <label class="container checkboxlabel">
         <input type="checkbox" class="black" name="ritem" value="Plin" data-target="Plin">
-        <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckOff.svg" alt="">
+        <img class="checkbox-image" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/CheckOff.png" alt="">
       </label>
       <p id="Plin">PLIN</p>
   </div>

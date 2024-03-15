@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <title>Afiliación Celular</title>
-    <link rel="stylesheet" type="text/css" href="../../../../../../../css/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_0/TransferenciaACelular_0.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_0/TransferenciaACelular_0.css">
   </head>
   <body>
     <div id="maindiv">
-      <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;">TRANSFIERE A CELULAR</h1>
+  <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;margin-bottom: 19px;">TRANSFIERE A CELULAR</h1>
 
       <div class="container">
         <p class="label">1. Cuenta origen</p>
@@ -51,7 +51,7 @@
         <div class="DestiBene">
             <input maxlength="9" type="text" name="" id="Celular" placeholder="Ingrese el nro. de celular del contacto">
             <div class="AyudaContainer">
-                <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-15.svg" alt="">
+                <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-15.png" alt="">
                 <a href="">Ayuda</a>
             </div>
         </div>
@@ -60,16 +60,16 @@
 
       <div id="btndiv">
         <button class="btn1">
-          <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
+          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-2.png" />REGRESAR
         </button>
         <button class="btn2">
-          CONTINUAR <img src="../../../../../../../imagenes/verTransferenciaContacto/Svgs/Vector-1.svg" />
+          CONTINUAR <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-1.png" />
         </button>
       </div>
 
     </div>
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="../../../../../../../js/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_0/TransferenciaACelular_0.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/verTransferenciaContacto/TransferenciaACelular/TransferenciaACelular_0/TransferenciaACelular_0.js"></script>
   </body>
 </html>

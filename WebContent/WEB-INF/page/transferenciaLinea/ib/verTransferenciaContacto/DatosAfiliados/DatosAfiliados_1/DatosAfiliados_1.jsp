@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="maindiv">
-        <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;">Confirma el cambio de tu n&uacute;mero celular</h1>
+    <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;margin-bottom: 19px;">Confirma el cambio de tu n&uacute;mero celular</h1>
         
         <div class="container">
             <p>Para continuar con el proceso de afiliaci&oacute;n te hemos enviado un c&oacute;digo de verificaci&oacute;n SMS al nuevo n&uacute;mero celular.</p>
@@ -20,7 +20,7 @@
         </div>
 
     <form id="CodeValidation" name="CodeValidation">
-        <label for="code">C&oacute;digo de verificaci&oacute;n</label>
+        <label for="code" style="font-family: 'daxcompact-mediumregular';">C&oacute;digo de verificaci&oacute;n</label>
         <div class="codeContainer">
             <input type="password" name="code" id="code" required maxlength="6">
             <a href="">Reenviar c&oacute;digo</a>

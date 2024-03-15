@@ -10,7 +10,7 @@
   <body>
     <div id="maindiv">
       <div class="header">
-      <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;">¿Est&aacute;s seguro que deseas cambiar tu n&uacute;mero de celular?</h1>
+  <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;margin-bottom: 19px;">¿Est&aacute;s seguro que deseas cambiar tu n&uacute;mero de celular?</h1>
       <p><strong>Recuerda:</strong> Al cambiar tu n&uacute;mero celular, las nuevas transferencias que te env&iacute;en ser&aacute;n al nuevo n&uacute;mero celular que est&aacute;s registrando.</p>
     </div>
 
@@ -19,8 +19,32 @@
         <p id="Number">947 058 652</p>
 
         <div id="table">
-
-          
+          <table>
+            <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right">N&uacute;mero anterior:</td>
+            <td style="padding-bottom: 8px;"class="left" style="color: rgba(39, 60, 78, 1);">947 058 652</td>
+          </tr>
+          <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right">Cuenta afiliada:</td>
+            <td style="padding-bottom: 8px;" class="left">01-1001-000001</td>
+          </tr>
+          <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right">Tipo de cuenta:</td>
+            <td style="padding-bottom: 8px;" class="left">Cuenta ahorro soles</td>
+          </tr>
+          <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right"></td>
+            <td style="padding-bottom: 8px;" class="left"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/bnlogo.png"> Banco de la Naci&oacute;n</td>
+          </tr>
+          <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right">Fecha:</td>
+            <td  style="padding-bottom: 8px;"class="left">19/01/2024</td>
+          </tr>    
+          <tr style="padding-bottom: 8px;">
+            <td style="padding-bottom: 8px;" class="right">Hora:</td>
+            <td style="padding-bottom: 8px;" class="left">11:42:10</td>
+          </tr>  
+          </table>
         </div>
       
 
@@ -28,10 +52,10 @@
       
       <div id="btndiv">
         <button class="btn1">
-          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-2.svg" />REGRESAR
+          <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-2.png" />REGRESAR
         </button>
         <button class="btn2">
-          SI, CAMBIAR <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector.svg" />
+          SI, CAMBIAR <img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector.png" />
         </button>
       </div>
 

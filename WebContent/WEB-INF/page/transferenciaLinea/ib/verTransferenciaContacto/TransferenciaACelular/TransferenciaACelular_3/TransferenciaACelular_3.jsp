@@ -10,8 +10,8 @@
   <body>
     <div id="maindiv">
       <div class="header">
-      <img class="OkLogo" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/CheckLogo.svg" alt="">
-      <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;">&#xA1;Gracias, Rosa!</h1>
+      <img class="OkLogo" src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/CheckLogo.png" alt="">
+  <h1 style="font-family: 'daxcompact-mediumregular'; font-size: 20px;margin-bottom: 19px;">&#xA1;Gracias, Rosa!</h1>
       <p>La operaci&oacute;n fue realizada con &eacute;xito.</p>
     </div>
 
@@ -37,7 +37,7 @@
           </tr>
           <tr style="padding-bottom: 8px;">
             <td style="padding-bottom: 8px;" class="right"></td>
-            <td style="padding-bottom: 8px;" class="left"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/bnlogo.svg"> Banco de la Naci&oacute;n</td>
+            <td style="padding-bottom: 8px;" class="left"><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/bnlogo.png"> Banco de la Naci&oacute;n</td>
           </tr>
           <tr style="padding-bottom: 8px;">
             <td style="padding-bottom: 8px;" class="right">Comisi&oacute;n:</td>
@@ -65,7 +65,7 @@
       <div class="thanks">
         <div class="checkbox">
           <label class="container checkboxlabel">
-            <strong>Guardar operaci&oacute;n frecuente</strong>
+            <strong style="font-family: 'daxcompact-mediumregular';">Guardar operaci&oacute;n frecuente</strong>
             <input type="checkbox" class="black" id="checkbox">
             <span class="checkmark"></span>
           </label>
@@ -73,9 +73,9 @@
       </div>
 
       <div class="btns">
-        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-4.svg" alt="">IMPRIMIR</button>
-        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-3.svg" alt="">ENVIAR</button>
-        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Svgs/Vector-5.svg" alt="">DESCARGAR</button>
+        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-4.png" alt="">IMPRIMIR</button>
+        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-3.png" alt="">ENVIAR</button>
+        <button><img src="<%=request.getContextPath()%>/imagenes/verTransferenciaContacto/Imgs/Vector-5.png" alt="">DESCARGAR</button>
       </div>
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>

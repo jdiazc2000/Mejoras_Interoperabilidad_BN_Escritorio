@@ -1,11 +1,11 @@
 let variableRecibida = getParameterByName("variable");
 console.log(variableRecibida)
 
-$(document).ready(function(){
-       if(variableRecibida != ""){
-              $('h2').text(variableRecibida)
-       }
-});
+// $(document).ready(function(){
+//        if(variableRecibida != ""){
+//               $('h2').text(variableRecibida)
+//        }
+// });
 
 function getParameterByName(name, url) {
        if (!url) url = window.location.href;
