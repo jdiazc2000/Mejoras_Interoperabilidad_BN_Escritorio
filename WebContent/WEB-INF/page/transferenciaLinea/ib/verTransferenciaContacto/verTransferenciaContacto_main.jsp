@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <title>Document</title>
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/verTransferenciaContacto/verTransferenciaContacto_main.css" />
+    <link rel="stylesheet" href="../../../../../css/verTransferenciaContacto/verTransferenciaContacto_main.css" />
   </head>
   <body>
     <div id="maindiv">
